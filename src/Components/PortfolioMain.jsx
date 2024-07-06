@@ -15,7 +15,6 @@ const PortfolioMain = () => {
 
             <div className="h-fit">
                 <About />
-                <Skills />
                 <Projects />
                 <Education />
                 <ContactMe />
