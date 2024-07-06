@@ -1,7 +1,14 @@
+import { HashRouter, Routes, Route } from "react-router-dom";
+import PortfolioMain from "./Components/PortfolioMain";
+
 function App() {
   return (
     <div>
-      hello portfolio
+      <HashRouter>
+        <Routes>
+          <Route path='/' element={<PortfolioMain />} />
+        </Routes>
+      </HashRouter>    
     </div>
   );
 }
