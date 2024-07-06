@@ -1,16 +1,25 @@
 import React from 'react'
-import PersonalDetailsSection from './PersonalDetailsSection'
+import Navigation from './Navigation'
+import About from './About' 
+import Skills from './Skills'
 import Projects from './Projects'
+import Education from './Education'
 import ContactMe from './ContactMe'
 
 const PortfolioMain = () => {
     return (
-        <div className="h-fit">
+        <div>
+            <div className='position fixed'>
+                <Navigation />
+            </div>
 
-            <PersonalDetailsSection />
-            <Projects />
-            <ContactMe />
-
+            <div className="h-fit">
+                <About />
+                <Skills />
+                <Projects />
+                <Education />
+                <ContactMe />
+            </div>
         </div>
     )
 }

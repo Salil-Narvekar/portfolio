@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactMe = () => {
   return (
-    <div className='h-dvh bg-red-200'>
+    <div className='grid justify-items-center h-dvh bg-violet-200' id="contact">
         Contact Me 
     </div>
   )

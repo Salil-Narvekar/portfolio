@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='h-dvh bg-blue-200'>
+    <div className='grid justify-items-center h-dvh bg-violet-400' id="projects">
         Projects
     </div>
   )
