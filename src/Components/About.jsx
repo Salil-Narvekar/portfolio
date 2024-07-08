@@ -6,7 +6,7 @@ import AboutDescription from './AboutDescription'
 
 const About = () => {
     return (
-        <div className='h-dvh bg-violet-200' id="about">
+        <div className='h-dvh' id="about">
 
             <div className='h-1/5'></div>
 
