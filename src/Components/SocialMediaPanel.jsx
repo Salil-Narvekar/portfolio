@@ -11,12 +11,28 @@ const SocialMediaPanel = () => {
         <div>
             <div className='flex flex-cols-7 gap-1 lg:gap-4'>
                 <div className='col-span-3'>
-                    <Resume resumeUrl={'https://www.google.com'}/>
+                    <Resume resumeUrl={'https://www.google.com'} />
                 </div>
-                <SocialMediaIcon href='https://mail.google.com/mail/?view=cm&fs=1&to=narvekarsalil1106@gmail.com' icon={<BiLogoGmail />} />
-                <SocialMediaIcon href='https://www.linkedin.com/in/salil-narvekar-2a7a06280/' icon={<FaLinkedin />} />
-                <SocialMediaIcon href='https://github.com/Salil-Narvekar' icon={<FaGithub />} />
-                <SocialMediaIcon href='https://www.instagram.com/salil.11._/' icon={<RiInstagramFill />} />
+
+                <SocialMediaIcon
+                    href='https://mail.google.com/mail/?view=cm&fs=1&to=narvekarsalil1106@gmail.com'
+                    icon={<BiLogoGmail />}
+                />
+
+                <SocialMediaIcon
+                    href='https://www.linkedin.com/in/salil-narvekar-2a7a06280/'
+                    icon={<FaLinkedin />}
+                />
+
+                <SocialMediaIcon
+                    href='https://github.com/Salil-Narvekar'
+                    icon={<FaGithub />}
+                />
+
+                <SocialMediaIcon
+                    href='https://www.instagram.com/salil.11._/'
+                    icon={<RiInstagramFill />}
+                />
             </div>
         </div>
     )
