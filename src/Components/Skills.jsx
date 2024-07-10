@@ -45,8 +45,7 @@ const Skills = () => {
 
   return (
     <div className='grid grid-rows-2 justify-items-center h-full w-full'>
-      {/* <div className='grid grid-flow-col grid-rows-2 md:grid-flow-col lg:grid-flow-col gap-4 justify-items-center'>{skills}</div> */}
-      <div className='grid md:grid-flow-col lg:grid-flow-col gap-4 justify-items-center'>{skills}</div>
+      <div className='grid sm:grid-flow-col grid-flow-col grid-rows-2 md:grid-rows-1 md:grid-flow-col lg:grid-rows-1 lg:grid-flow-col gap-4 justify-items-center'>{skills}</div>
       <div className='grid justify-items-center text-md md:text-xl lg:text-2xl xl:text-3xl font-bold w-full'>{skillKey}</div>
     </div>
   )

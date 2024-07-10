@@ -12,13 +12,13 @@ const Home = () => {
 
             <div className='h-4/5 grid items-center'>
 
-                <div className='sm:text-right lg:text-left'>
+                <div className='text-center md:text-left lg:text-left'>
                     <div className='text-xs md:text-lg lg:text-2xl xl:text-3xl font-normal font-serif'> Hello & welcome visitor !! Myself,</div>
                     <Name name='Salil Narvekar' />
                     <Designation designation='Web Developer' />
                 </div>
 
-                <div className='grid justify-items-center items-center h-full'>
+                <div className='grid justify-items-center items-center text-center h-full'>
                     <AboutDescription />
                     <Skills />
                 </div>
