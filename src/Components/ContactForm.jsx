@@ -38,9 +38,9 @@ const ContactForm = () => {
     }
 
     return (
-        <div className='grid grid-rows-3 lg:grid-cols-4 gap-2 justify-items-center'>
+        <div className='grid grid-rows-3 md:grid-rows-1 md:grid-cols-4 lg:grid-rows-1 lg:grid-cols-4 gap-2 text-xs md:text-sm lg:text-md font-medium md:pl-4 md:pr-4'>
             <input
-                className="lg:col-span-1 rounded text-slate-700 text-md font-medium h-full w-full pl-2 py-1 lg:py-3"
+                className="md:col-span-1 lg:col-span-1 rounded text-slate-700 h-full w-full pl-2 py-1 md:py-2 lg:py-3"
                 type="email"
                 id="email"
                 name="email"
@@ -49,7 +49,7 @@ const ContactForm = () => {
             />
 
             <input
-                className="lg:col-span-2 rounded text-slate-700 text-md font-medium h-full w-full pl-2 py-1 lg:py-3"
+                className="md:col-span-2 lg:col-span-2 rounded text-slate-700 h-full w-full pl-2 py-1 md:py-2 lg:py-3"
                 type="text"
                 id="subject"
                 name="subject"
@@ -58,7 +58,7 @@ const ContactForm = () => {
             />
 
             <button
-                className="lg:col-span-1 grid justify-items-center items-center w-full h-full bg-gradient-to-r from-indigo-950 to-violet-600 text-slate-300 text-sm transition duration-500 ease-in-out hover:scale-95 hover:text-white cursor-pointer rounded-lg font-semibold text-lg"
+                className="md:col-span-1 lg:col-span-1 grid justify-items-center items-center w-full h-full bg-gradient-to-r from-indigo-950 to-violet-600 text-slate-300 text-xs md:text-sm lg:text-md transition duration-500 ease-in-out hover:scale-95 hover:text-white cursor-pointer rounded-lg font-semibold text-lg"
                 onClick={() => submit(email, subject)}
             >
                 Let's Connect
@@ -66,7 +66,7 @@ const ContactForm = () => {
 
             {
                 validationMsg !== '' &&
-                <span className='text-red-950 font-medium text-md'>{validationMsg}</span>
+                <span className='text-red-950'>{validationMsg}</span>
             }
         </div>
     )
