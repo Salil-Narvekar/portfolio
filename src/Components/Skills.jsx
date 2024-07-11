@@ -13,6 +13,7 @@ import { IoLogoVue } from "react-icons/io5";
 import { FaBootstrap } from "react-icons/fa";
 import { SiVuetify } from "react-icons/si";
 import { FaGitSquare } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
 
 const Skills = () => {
 
@@ -23,6 +24,7 @@ const Skills = () => {
   const skillsObj = {
     'Python': <FaPython />,
     'React.js': <FaReact />,
+    'Django': <DiDjango />,
     'Vue.js': <IoLogoVue />,
     'JavaScript': <TbBrandJavascript />,
     'Html 5': <FaHtml5 />,
@@ -45,8 +47,20 @@ const Skills = () => {
 
   return (
     <div className='grid grid-rows-2 justify-items-center h-full w-full'>
-      <div className='grid sm:grid-flow-col grid-flow-col grid-rows-2 md:grid-rows-1 md:grid-flow-col lg:grid-rows-1 lg:grid-flow-col gap-4 justify-items-center'>{skills}</div>
-      <div className='grid justify-items-center text-md md:text-xl lg:text-2xl xl:text-3xl font-bold w-full'>{skillKey}</div>
+
+      <div className='grid sm:grid-flow-col grid-flow-col grid-rows-2 md:grid-rows-1 md:grid-flow-col lg:grid-rows-1 lg:grid-flow-col gap-4 justify-items-center'>
+        {skills}
+      </div>
+
+      <div className='grid justify-items-center text-md md:text-xl lg:text-2xl xl:text-3xl font-bold w-full'>
+        {
+          skillKey ?
+            skillKey
+            :
+            <span className='text-slate-600 text-sm font-medium'> - Hover to display skill name - </span>
+        }
+      </div>
+      
     </div>
   )
 }

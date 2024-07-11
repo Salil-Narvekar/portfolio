@@ -9,14 +9,23 @@ import { TbSchool } from "react-icons/tb";
 import { RiMailSendFill } from "react-icons/ri";
 
 const Navigation = () => {
+
+    const navTabs = {
+        'Home': <RiHome2Fill />,
+        'About': <FaUser />,
+        'Projects': <BsImages />,
+        'Education': <TbSchool />,
+        'Contact': <RiMailSendFill />
+    }
+
     return (
         <div className='grid grid-rows-12'>
             <div className='row-span-2'></div>
-            <Link to="home" smooth={true} duration={1000}> <NavContent navFor='Home' navIcon={<RiHome2Fill />} /> </Link>
-            <Link to="about" smooth={true} duration={1000}> <NavContent navFor='About' navIcon={<FaUser />} /> </Link>
-            <Link to="projects" smooth={true} duration={1000}> <NavContent navFor='Projects' navIcon={<BsImages />} /> </Link>
-            <Link to="education" smooth={true} duration={1000}> <NavContent navFor='Education' navIcon={<TbSchool />} /> </Link>
-            <Link to="contact" smooth={true} duration={1000}> <NavContent navFor='Contact' navIcon={<RiMailSendFill />} /> </Link>
+            {
+                Object.entries(navTabs).map(([key_NavFor, value_Icon]) => (
+                    <Link to={key_NavFor} smooth={true} duration={1000}> <NavContent navFor={key_NavFor} navIcon={value_Icon} /> </Link>
+                ))
+            }
         </div>
     )
 }

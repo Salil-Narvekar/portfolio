@@ -1,11 +1,12 @@
 import React from 'react'
 import Navigation from './Navigation'
+import TitleBar from './TitleBar'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
 import Education from './Education'
 import ContactMe from './ContactMe'
-import TitleBar from './TitleBar'
+import FooterMark from './FooterMark'
 
 const PortfolioMain = () => {
     return (
@@ -21,12 +22,13 @@ const PortfolioMain = () => {
                     <Navigation />
                 </div>
 
-                <div className='col-span-10 col-start-2 h-fit'>
+                <div className='col-span-10 col-start-2 pl-2 md:pl-0 lg:pl-0 h-fit'>
                     <Home />
                     <About />
                     <Projects />
                     <Education />
                     <ContactMe />
+                    <FooterMark />
                 </div>
             </div>
         </div>

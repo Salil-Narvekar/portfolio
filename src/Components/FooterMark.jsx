@@ -2,8 +2,10 @@ import React from 'react'
 
 const FooterMark = () => {
   return (
-    <div className='grid justify-items-center items-end text-slate-600 text-md font-semibold'>
-        - Developed & Designed by Salil Narvekar -
+    <div className='h-28 text-center text-slate-600 font-semibold'>
+      <div className='mt-10 text-xs md:text-sm lg:text-sm'> Copyright ©2024 All rights reserved | Built using React.js & Tailwind CSS </div>
+      <hr className='m-1 ml-10 mr-10 lg:ml-20 lg:mr-20 border-slate-400' />
+      <div className='text-sm md:text-md lg:text-lg'> Designed  & Developed by Salil Narvekar </div>
     </div>
   )
 }
