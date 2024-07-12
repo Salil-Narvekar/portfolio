@@ -7,11 +7,12 @@ const PageTitle = ({ title, pageDiscriptionRequired, pageDiscriptionLine1, pageD
         {title}
       </div>
       
+      <hr className='m-1 mr-10 ml-0 md:ml-10 lg:ml-10 lg:ml-20 lg:mr-20 border-black' />
+
       {
         pageDiscriptionRequired === 'yes' &&
 
         <div className='text-left md:text-center lg:text-center font-medium text-xs md:text-sm lg:text-lg xl:text-lg w-full'>
-          <hr className='m-1 mr-10 ml-0 md:ml-10 lg:ml-10 lg:ml-20 lg:mr-20 border-black' />
           {pageDiscriptionLine1} <br />
           {pageDiscriptionLine2} <br />
         </div>

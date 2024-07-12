@@ -4,7 +4,8 @@ import TitleBar from './TitleBar'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
-import Education from './Education'
+import Certifications from './Certifications'
+// import Education from './Education'
 import ContactMe from './ContactMe'
 import FooterMark from './FooterMark'
 
@@ -26,7 +27,8 @@ const PortfolioMain = () => {
                     <Home />
                     <About />
                     <Projects />
-                    <Education />
+                    <Certifications />
+                    {/* <Education /> */}
                     <ContactMe />
                     <FooterMark />
                 </div>

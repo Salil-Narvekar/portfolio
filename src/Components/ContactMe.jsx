@@ -47,7 +47,7 @@ const ContactMe = () => {
         <ContactIcons
           icon={<IoMdCall />}
           contactTitle='Contact No.'
-          contactInfoText='9869757298'
+          contactInfoText='+91 9869757298'
         />
 
         <ContactIcons
