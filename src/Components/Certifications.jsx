@@ -36,8 +36,8 @@ const Certifications = () => {
 
             {/* Position of responsibility */}
             <div className='row-span-3 grid sm:grid-rows-3 justify-items-center items-end h-full mt-4'>
-                <div className='row-span-1'>
-                    <PageTitle title='Some other Positions of Responsibity' />
+                <div className='row-span-1 w-full'>
+                    <PageTitle title='Positions of Responsibity' />
                 </div>
 
                 <div className='row-span-2 h-full w-full text-xs md:text-lg lg:text-lg md:pl-6 lg:pl-6 py-2'>

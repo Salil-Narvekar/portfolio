@@ -1,10 +1,11 @@
 import React from 'react'
 import PageTitle from './PageTitle'
+import ProjectPlate from './ProjectPlate'
 
 const Projects = () => {
   return (
-    <div className='h-fit grid grid-rows-12 items-start pt-20' id="Projects">
-      <div className='row-span-2 h-fit w-full'>
+    <div className='h-fit grid items-start pt-20' id="Projects">
+      <div className='h-fit w-full'>
         <PageTitle
           title='Featured Projects'
           pageDiscriptionRequired='yes'
@@ -12,9 +13,15 @@ const Projects = () => {
         />
       </div>
 
-      <div className='row-span-10 grid md:grid-cols-3 lg:grid-cols-3 h-full border border-black'>
-
+      <div className='grid sm:grid-cols-2 sm:grid-rows-2 gap-4 justify-items-center items-center h-fit py-4 pl-4 pr-4'>
+        <ProjectPlate />
+        <ProjectPlate />
+        <ProjectPlate />
+        <ProjectPlate />
+        <ProjectPlate />
+        <ProjectPlate />
       </div>
+
     </div>
   )
 }
