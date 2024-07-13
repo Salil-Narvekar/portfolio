@@ -5,8 +5,8 @@ import Certificate from './Certificate'
 const Certifications = () => {
 
     const certificatesObj = {
-        'https://www.google.com': 'Internship Completion (EnPointe IT Services)',
-        'https://www.linkedin.com/in/salil-narvekar-2a7a06280/': 'Certified Python Developer (NetTech India)'
+        'https://drive.google.com/file/d/1pIav6FRFMDcAab6CTe-GxXbHfuBEIkTD/view?usp=drive_link': 'Internship Completion (EnPointe IT Services)',
+        'https://drive.google.com/file/d/1pIav6FRFMDcAab6CTe-GxXbHfuBEIkTD/view?usp=drive_link': 'Certified Python Developer (NetTech India)'
     }
 
     return (
