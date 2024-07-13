@@ -15,7 +15,7 @@ const Navigation = () => {
         'Home': <RiHome2Fill />,
         'About': <FaUser />,
         'Projects': <BsImages />,
-        'Certifications': <PiCertificateFill />,
+        'Certificates': <PiCertificateFill />,
         // 'Education': <TbSchool />,
         'Contact': <RiMailSendFill />
     }
