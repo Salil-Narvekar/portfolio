@@ -5,8 +5,8 @@ import Certificate from './Certificate'
 const Certifications = () => {
 
     const certificatesObj = {
-        'https://www.google.com': 'Internship Completion Certificate - (EnPointe IT Services)',
-        'https://www.linkedin.com/in/salil-narvekar-2a7a06280/': 'Certified Python Developer - (NetTech India)'
+        'https://www.google.com': 'Internship Completion (EnPointe IT Services)',
+        'https://www.linkedin.com/in/salil-narvekar-2a7a06280/': 'Certified Python Developer (NetTech India)'
     }
 
     return (
@@ -22,10 +22,11 @@ const Certifications = () => {
 
             <div className='row-span-7 grid sm:grid-cols-2 gap-4 justify-items-center items-center h-full py-4 pl-4 pr-4'>
                 {
-                    Object.entries(certificatesObj).map(([key_href, value_name]) => (
+                    Object.entries(certificatesObj).map(([key_href, value_name], index) => (
                         <Certificate
-                            key={key_href}
+                            key={index}
                             href={key_href}
+                            certificationTitle={"Certificate "+ (index+1)}
                             certificateFor={value_name}
                         />
                     ))

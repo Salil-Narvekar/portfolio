@@ -24,9 +24,9 @@ const SocialMediaPanel = () => {
                 </div>
 
                 {
-                    Object.entries(socials).map(([key_href, value_icon]) => (
+                    Object.entries(socials).map(([key_href, value_icon], index) => (
                         <SocialMediaIcon
-                            key={key_href}
+                            key={index}
                             href={key_href}
                             icon={value_icon}
                         />

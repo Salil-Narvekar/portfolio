@@ -24,16 +24,16 @@ const Navigation = () => {
         <div className='grid grid-rows-12'>
             <div className='row-span-2'></div>
             {
-                Object.entries(navTabs).map(([key_NavFor, value_Icon]) => (
+                Object.entries(navTabs).map(([key_NavFor, value_Icon], index) => (
 
                     <Link
-                        key={key_NavFor}
+                        key={index}
                         to={key_NavFor}
                         smooth={true}
                         duration={1000}
                     >
                         <NavContent
-                            key={key_NavFor}
+                            key={index}
                             navFor={key_NavFor}
                             navIcon={value_Icon}
                         />
