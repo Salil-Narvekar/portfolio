@@ -25,7 +25,19 @@ const Navigation = () => {
             <div className='row-span-2'></div>
             {
                 Object.entries(navTabs).map(([key_NavFor, value_Icon]) => (
-                    <Link to={key_NavFor} smooth={true} duration={1000}> <NavContent navFor={key_NavFor} navIcon={value_Icon} /> </Link>
+
+                    <Link
+                        key={key_NavFor}
+                        to={key_NavFor}
+                        smooth={true}
+                        duration={1000}
+                    >
+                        <NavContent
+                            key={key_NavFor}
+                            navFor={key_NavFor}
+                            navIcon={value_Icon}
+                        />
+                    </Link>
                 ))
             }
         </div>

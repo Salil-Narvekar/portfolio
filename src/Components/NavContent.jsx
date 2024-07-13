@@ -10,7 +10,7 @@ const NavContent = ({ navFor, navIcon }) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-                    <span className='grid grid-flow-col gap-2 items-center text-xs lg:text-lg text-black font-semibold pl-2'>
+                    <span className='grid grid-flow-col gap-2 items-center text-xs lg:text-lg text-black font-semibold pl-2 backdrop-blur-sm rounded-3xl'>
                         {navIcon}
                         {
                             isHovered &&

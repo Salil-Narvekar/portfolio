@@ -20,12 +20,13 @@ const SocialMediaPanel = () => {
             <div className='flex flex-cols-7 gap-1 lg:gap-4'>
                 
                 <div className='col-span-3'>
-                    <Resume resumeUrl={'https://www.google.com'} />
+                    <Resume />
                 </div>
 
                 {
                     Object.entries(socials).map(([key_href, value_icon]) => (
                         <SocialMediaIcon
+                            key={key_href}
                             href={key_href}
                             icon={value_icon}
                         />
