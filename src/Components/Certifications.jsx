@@ -26,7 +26,7 @@ const Certifications = () => {
                         <Certificate
                             key={index}
                             href={key_href}
-                            certificationTitle={"Certificate "+ (index+1)}
+                            certificateNo={index+1}
                             certificateFor={value_name}
                         />
                     ))

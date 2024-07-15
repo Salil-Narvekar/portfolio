@@ -5,8 +5,6 @@ import { Link } from 'react-scroll';
 import { FaUser } from "react-icons/fa";
 import { BsImages } from "react-icons/bs";
 import { PiCertificateFill } from "react-icons/pi";
-// import { GiSkills } from "react-icons/gi";
-// import { TbSchool } from "react-icons/tb";
 import { RiMailSendFill } from "react-icons/ri";
 
 const Navigation = () => {
@@ -16,7 +14,6 @@ const Navigation = () => {
         'About': <FaUser />,
         'Projects': <BsImages />,
         'Certificates': <PiCertificateFill />,
-        // 'Education': <TbSchool />,
         'Contact': <RiMailSendFill />
     }
 

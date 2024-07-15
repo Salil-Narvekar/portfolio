@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 import { TbExternalLink } from "react-icons/tb";
 
-const Certificate = ({ href, certificateFor, certificationTitle }) => {
+const Certificate = ({ href, certificateFor, certificateNo }) => {
 
     const [isHovered, setIsHovered] = useState();
 
@@ -35,8 +35,8 @@ const Certificate = ({ href, certificateFor, certificationTitle }) => {
                     :
 
                     <div className='row-span-6 grid grid-rows-2 justify-items-center items-center h-full w-full pl-2 pr-2'>
-                        <div className='font-serif font-bold text-lg md:text-2xl lg:text-4xl '>{certificationTitle}</div>
-                        <div className='font-sans font-semibold text-md md:text-xl lg:text-2xl'>{certificateFor}</div>
+                        <div className='font-serif font-bold text-lg md:text-2xl lg:text-3xl xl:text-4xl'>{"Certificate " + certificateNo}</div>
+                        <div className='text-center font-sans font-semibold text-md md:text-xl lg:text-xl xl:text-2xl'>{certificateFor}</div>
                     </div>
             }
 

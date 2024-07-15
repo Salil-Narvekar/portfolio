@@ -5,13 +5,12 @@ import Home from './Home'
 import About from './About'
 import Projects from './Projects'
 import Certifications from './Certifications'
-// import Education from './Education'
 import ContactMe from './ContactMe'
 import FooterMark from './FooterMark'
 
 const PortfolioMain = () => {
     return (
-        <div className='bg-gradient-to-b from-violet-400 to-violet-300'>
+        <div className='bg-purple-300/50'>
 
             <div className="grid grid-cols-11">
 
@@ -28,7 +27,6 @@ const PortfolioMain = () => {
                     <About />
                     <Projects />
                     <Certifications />
-                    {/* <Education /> */}
                     <ContactMe />
                     <FooterMark />
                 </div>
