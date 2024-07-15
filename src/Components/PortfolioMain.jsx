@@ -18,7 +18,7 @@ const PortfolioMain = () => {
                     <TitleBar />
                 </div>
 
-                <div className='col-span-1 pl-1 position fixed'>
+                <div className='col-span-1 pl-1 position fixed h-full'>
                     <Navigation />
                 </div>
 

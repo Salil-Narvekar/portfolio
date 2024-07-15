@@ -19,7 +19,7 @@ const Navigation = () => {
 
     return (
         <div className='grid grid-rows-12'>
-            <div className='row-span-2'></div>
+            <div className='row-span-4'></div>
             {
                 Object.entries(navTabs).map(([key_NavFor, value_Icon], index) => (
 

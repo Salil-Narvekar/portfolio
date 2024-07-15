@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PageTitle from './PageTitle'
 import ProjectPlate from './ProjectPlate'
 // import { FaPython } from "react-icons/fa";
@@ -11,6 +11,11 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPhp } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { BsFiletypeJson } from "react-icons/bs";
+import Slider from './Slider';
+import projectOwrtc2Img from '../projectOwrtc2.png'
+import projectPartyImg from '../projectPartyImg.png'
+import projectAuth from '../projectAuth.png'
+
 
 const Projects = () => {
 
@@ -26,9 +31,14 @@ const Projects = () => {
   const PHP = <img src="https://img.icons8.com/officel/30/php-logo.png" alt={<SiPhp />} />
   const MySql = <img src="https://img.icons8.com/color/30/mysql-logo.png" alt={<GrMysql />} />
 
+  const projects = ["Organization Workflow (Version 0.0.2)", "Organization Workflow with Real Time Communication", "Party Planner", "Basic Authentication Interface"]
+
+  const [currentPage, setCurrentpage] = useState(0)
+  console.log("currentPage from main", currentPage)
+
   return (
-    <div className='h-dvh grid items-start pt-20' id="Projects">
-      <div className='h-1/5 w-full'>
+    <div className='h-dvh grid grid-rows-14 pt-20' id="Projects">
+      <div className='row-span-2 grid items-start h-full w-full'>
         <PageTitle
           title='Featured Projects'
           pageDiscriptionRequired='yes'
@@ -36,29 +46,23 @@ const Projects = () => {
         />
       </div>
 
-      <div className='h-4/5 border border-black grid grid-cols-12 gap-4 justify-items-center items-center w-full'>
-
-        {/* <div className='col-span-2 w-full h-full'>
-
-        </div>
+      <div className='row-span-11 grid justify-self-center items-center py-4 w-11/12 lg:w-10/12 h-full'>
 
         <div className='col-span-8 w-full h-full'>
           <ProjectPlate
             projectName='Organization Workflow (Version 0.0.2)'
             projectSubtitle='Personal Project'
+            projectImageUrl={projectOwrtc2Img}
             languagesUsed={[ReactJs, Tailwind, JavaScript, JSON]}
             Git_pages_link={'https://salil-narvekar.github.io/owrtc/'}
             Git_code_link={'https://github.com/Salil-Narvekar/owrtc.git'}
           />
         </div>
 
-        <div className='col-span-2'>
-
-        </div> */}
-
         {/* <ProjectPlate
           projectName='Organization Workflow with Real Time Communication'
           projectSubtitle='College Final Year Project'
+          projectImageUrl={projectOwrtc2Img}
           languagesUsed={[JavaScript, Html, CSS, PHP, MySql, JSON]}
           Git_pages_link={'https://salil-narvekar.github.io/owrtc/'}
           Git_code_link={'https://github.com/Salil-Narvekar/owrtc.git'}
@@ -67,6 +71,7 @@ const Projects = () => {
         <ProjectPlate
           projectName='Party Planner'
           projectSubtitle='Personal Project'
+          projectImageUrl={projectPartyImg}
           languagesUsed={[ReactJs, JavaScript, Tailwind]}
           Git_pages_link={'https://salil-narvekar.github.io/demoPartyPlanner/'}
           Git_code_link={'https://github.com/Salil-Narvekar/demoPartyPlanner.git'}
@@ -75,10 +80,15 @@ const Projects = () => {
         <ProjectPlate
           projectName='Basic Authentication Interface'
           projectSubtitle='Personal Project'
+          projectImageUrl={projectAuth}
           languagesUsed={[ReactJs, JavaScript, Tailwind]}
           Git_pages_link={'https://salil-narvekar.github.io/taskPopX/'}
           Git_code_link={'https://github.com/Salil-Narvekar/taskPopX.git'}
         /> */}
+      </div>
+
+      <div className='row-span-1 grid justify-items-center justify-self-center items-center h-full w-full'>
+        <Slider pageCount={projects.length} setCurrentpage={setCurrentpage} />
       </div>
 
     </div>

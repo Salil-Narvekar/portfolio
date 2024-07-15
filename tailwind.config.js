@@ -5,13 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      height: {
-        '128': '32rem',
+      gridTemplateRows: {
+        // Simple 16 row grid
+        '14': 'repeat(14, minmax(0, 1fr))',
+
+        // Complex site-specific row configuration
+        'layout': '200px minmax(900px, 1fr) 100px',
       },
-      width: {
-        '628': '72rem',
-        '428': '42rem',
-      }
     },
   },
   plugins: [],

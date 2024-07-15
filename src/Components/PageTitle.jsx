@@ -12,7 +12,7 @@ const PageTitle = ({ title, pageDiscriptionRequired, pageDiscriptionLine1, pageD
       {
         pageDiscriptionRequired === 'yes' &&
 
-        <div className='text-left md:text-center lg:text-center font-medium text-xs md:text-sm lg:text-md xl:text-lg w-full text-slate-700'>
+        <div className='text-left md:text-center lg:text-center font-medium text-xs md:text-xs lg:text-sm xl:text-lg w-full text-slate-700'>
           {pageDiscriptionLine1} <br />
           {pageDiscriptionLine2} <br />
         </div>

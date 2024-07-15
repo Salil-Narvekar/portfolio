@@ -10,7 +10,7 @@ const Certifications = () => {
     }
 
     return (
-        <div className='h-fit grid grid-rows-12 items-start pt-20' id="Certifications">
+        <div className='h-fit grid grid-rows-12 items-start pt-20' id="Certificates">
             <div className='row-span-2 h-fit w-full'>
                 <PageTitle
                     title='Certifications & Accomplishments'
@@ -40,7 +40,7 @@ const Certifications = () => {
                     <PageTitle title='Positions of Responsibity' />
                 </div>
 
-                <div className='row-span-2 h-full w-full text-xs md:text-lg lg:text-lg md:pl-6 lg:pl-6 py-2'>
+                <div className='row-span-2 h-full w-full text-xs md:text-md lg:text-lg md:pl-6 lg:pl-6 py-2'>
                     <div>
                         <span className='font-bold'>{"Hospitality HOD: "}</span>
                         <span className='text-slate-700 font-medium'>{"College Annual Photography Event (Drishti Photography)"}</span>
