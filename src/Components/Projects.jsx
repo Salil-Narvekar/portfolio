@@ -13,8 +13,10 @@ import { GrMysql } from "react-icons/gr";
 import { BsFiletypeJson } from "react-icons/bs";
 import Slider from './Slider';
 import projectOwrtc2Img from '../projectOwrtc2.png'
+import projectOwrtc1Img from '../projectOwrtc1.png'
 import projectPartyImg from '../projectPartyImg.png'
 import projectAuth from '../projectAuth.png'
+import { useSwipeable } from 'react-swipeable';
 
 
 const Projects = () => {
@@ -31,13 +33,53 @@ const Projects = () => {
   const PHP = <img src="https://img.icons8.com/officel/30/php-logo.png" alt={<SiPhp />} />
   const MySql = <img src="https://img.icons8.com/color/30/mysql-logo.png" alt={<GrMysql />} />
 
-  const projects = ["Organization Workflow (Version 0.0.2)", "Organization Workflow with Real Time Communication", "Party Planner", "Basic Authentication Interface"]
+  const projects = [
+    {
+      name: "Organization Workflow (Version 0.0.2)",
+      subtitle: "Personal Project",
+      projectImageUrl: projectOwrtc2Img,
+      languages: [ReactJs, Tailwind, JavaScript, JSON],
+      gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
+      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtc.git'
+    },
+    {
+      name: "Party Planner",
+      subtitle: "Personal Project",
+      projectImageUrl: projectPartyImg,
+      languages: [ReactJs, JavaScript, Tailwind],
+      gitPagesLink: 'https://salil-narvekar.github.io/demoPartyPlanner/',
+      gitCodeLink: 'https://github.com/Salil-Narvekar/demoPartyPlanner.git'
+    },
+    {
+      name: "Basic Authentication Interface",
+      subtitle: "Personal Project",
+      projectImageUrl: projectAuth,
+      languages: [ReactJs, JavaScript, Tailwind],
+      gitPagesLink: 'https://salil-narvekar.github.io/taskPopX/',
+      gitCodeLink: 'https://github.com/Salil-Narvekar/taskPopX.git'
+    },
+    {
+      name: "Organization Workflow with Real Time Communication",
+      subtitle: "College Final Year Project",
+      projectImageUrl: projectOwrtc1Img,
+      languages: [JavaScript, Html, CSS, PHP, MySql, JSON],
+      gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
+      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtc.git'
+    }
+  ]
 
   const [currentPage, setCurrentpage] = useState(0)
-  console.log("currentPage from main", currentPage)
+  // console.log("currentPage from main", currentPage)
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setCurrentpage(currentPage - 1),
+    onSwipedRight: () => setCurrentpage(currentPage + 1),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
 
   return (
-    <div className='h-dvh grid grid-rows-14 pt-20' id="Projects">
+    <div {...handlers} className='h-dvh grid grid-rows-14 pt-20' id="Projects">
       <div className='row-span-2 grid items-start h-full w-full'>
         <PageTitle
           title='Featured Projects'
@@ -49,46 +91,28 @@ const Projects = () => {
       <div className='row-span-11 grid justify-self-center items-center py-4 w-11/12 lg:w-10/12 h-full'>
 
         <div className='col-span-8 w-full h-full'>
-          <ProjectPlate
-            projectName='Organization Workflow (Version 0.0.2)'
-            projectSubtitle='Personal Project'
-            projectImageUrl={projectOwrtc2Img}
-            languagesUsed={[ReactJs, Tailwind, JavaScript, JSON]}
-            Git_pages_link={'https://salil-narvekar.github.io/owrtc/'}
-            Git_code_link={'https://github.com/Salil-Narvekar/owrtc.git'}
-          />
+          {
+            projects.map((projectDetails, index) => (
+
+              currentPage === index &&
+
+              <ProjectPlate
+                key={index}
+                projectName={projectDetails.name}
+                projectSubtitle={projectDetails.subtitle}
+                projectImageUrl={projectDetails.projectImageUrl}
+                languagesUsed={projectDetails.languages}
+                Git_pages_link={projectDetails.gitPagesLink}
+                Git_code_link={projectDetails.gitCodeLink}
+              />
+            ))
+          }
         </div>
 
-        {/* <ProjectPlate
-          projectName='Organization Workflow with Real Time Communication'
-          projectSubtitle='College Final Year Project'
-          projectImageUrl={projectOwrtc2Img}
-          languagesUsed={[JavaScript, Html, CSS, PHP, MySql, JSON]}
-          Git_pages_link={'https://salil-narvekar.github.io/owrtc/'}
-          Git_code_link={'https://github.com/Salil-Narvekar/owrtc.git'}
-        />
-
-        <ProjectPlate
-          projectName='Party Planner'
-          projectSubtitle='Personal Project'
-          projectImageUrl={projectPartyImg}
-          languagesUsed={[ReactJs, JavaScript, Tailwind]}
-          Git_pages_link={'https://salil-narvekar.github.io/demoPartyPlanner/'}
-          Git_code_link={'https://github.com/Salil-Narvekar/demoPartyPlanner.git'}
-        />
-
-        <ProjectPlate
-          projectName='Basic Authentication Interface'
-          projectSubtitle='Personal Project'
-          projectImageUrl={projectAuth}
-          languagesUsed={[ReactJs, JavaScript, Tailwind]}
-          Git_pages_link={'https://salil-narvekar.github.io/taskPopX/'}
-          Git_code_link={'https://github.com/Salil-Narvekar/taskPopX.git'}
-        /> */}
       </div>
 
-      <div className='row-span-1 grid justify-items-center justify-self-center items-center h-full w-full'>
-        <Slider pageCount={projects.length} setCurrentpage={setCurrentpage} />
+      <div className='row-span-1 grid justify-items-center justify-self-center items-center w-full'>
+        <Slider pageCount={projects.length} setCurrentpageProp={setCurrentpage} />
       </div>
 
     </div>

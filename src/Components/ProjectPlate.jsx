@@ -8,10 +8,10 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
 
     return (
         <div
-            className='bg-gradient-to-t from-neutral-50 to-neutral-100
+            className='bg-sky-50
             grid sm:grid-rows-12 h-full w-full
             rounded-lg border border-purple-300 
-            cursor-pointer mt-3 md:mt-0 lg:mt-0
+            mt-3 md:mt-0 lg:mt-0
             hover:shadow-xl hover:shadow-purple-500/50 duration-700'
         >
 
@@ -24,36 +24,38 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
             </div>
 
             {/* Project Window section */}
-            <div className="row-span-8 grid justify-items-center justify-self-center w-10/12 h-full border border-black rounded-lg"
+            <div className="row-span-8 grid justify-items-center justify-self-center w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 h-full border border-neutral-300 bg-slate-300 rounded-lg cursor-pointer "
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={() => window.open(Git_pages_link)}
             >
-                {
+                <div className='w-full h-full rounded-lg' style={{
+                    backgroundImage: `url(${projectImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                }}>
+                    {
 
-                    isHovered ?
+                        isHovered ?
 
-                        <div className='grid justify-items-center items-center font-semibold text-xs md:text-sm lg:text-lg xl:text-xl h-full'>
-                            <div className='grid gap-1 justify-items-center'>
-                                <div className='text-slate-600'>Redirect to Live Project URL</div>
-                                <div className='text-blue-800'>{Git_pages_link}</div>
-                                <TbExternalLink className='text-2xl md:text-3xl lg:text-4xl text-slate-600' />
+                            <div className='grid justify-items-center items-center font-semibold bg-gradient-to-t from-violet-500 to-violet-100 opacity-90 h-full w-full rounded-lg'>
+                                <div className='grid gap-1 justify-items-center text-xs md:text-sm lg:text-lg xl:text-xl '>
+                                    <div className='text-slate-700'>Redirect to Live Project URL</div>
+                                    <div className='text-center text-blue-800'>{Git_pages_link}</div>
+                                    <TbExternalLink className='text-2xl md:text-3xl lg:text-4xl text-slate-700' />
+                                </div>
                             </div>
-                        </div>
 
-                        :
+                            :
 
-                        <div className='grid size-full'
-                            style={{
-                                backgroundSize: '88%',
-                                backgroundImage: `url(${projectImageUrl})`,
-                                // backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat'
-                            }}>
-                            {description}
-                        </div>
+                            <div className='grid size-full bg-neutral-200 opacity-20 rounded-lg'>
+                                {description}
+                            </div>
 
-                }
+                    }
+                </div>
+
             </div>
 
             {/* Languages used section */}
@@ -67,7 +69,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
 
             {/* Git Source code link section */}
             <div className='row-span-1 grid grid-flow-col gap-2 justify-items-center items-center 
-                h-full w-full font-medium rounded-b-lg
+                h-full w-full font-medium rounded-b-lg cursor-pointer 
                 bg-gradient-to-t from-violet-950 to-violet-900 hover:bg-gradient-to-b text-slate-200'
                 onClick={() => window.open(Git_code_link)}
             >
