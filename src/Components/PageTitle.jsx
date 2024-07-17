@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageTitle = ({ title, pageDiscriptionRequired, pageDiscriptionLine1, pageDiscriptionLine2 }) => {
   return (
-    <div className='grid items-start font-semibold'>
+    <div className='grid items-start font-semibold text-balance'>
       <div className='grid justify-items-start md:justify-items-center lg:justify-items-center text-xl md:text-2xl lg:text-3xl xl:text-4xl font-serif font-bold text-purple-950'>
         {title}
       </div>

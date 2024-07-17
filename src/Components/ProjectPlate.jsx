@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaGithub } from "react-icons/fa";
 import { TbExternalLink } from "react-icons/tb";
 
 const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, description, languagesUsed, Git_pages_link, Git_code_link }) => {
 
     const [isHovered, setIsHovered] = useState();
+    const [showDescription, setShowDescription] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowDescription(true);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     return (
         <div
@@ -12,11 +21,12 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
             grid sm:grid-rows-12 h-full w-full
             rounded-lg border border-purple-300 
             mt-3 md:mt-0 lg:mt-0
-            hover:shadow-xl hover:shadow-purple-500/50 duration-700'
+            hover:shadow-xl hover:shadow-purple-500/50 duration-700
+            animate-fadeIn'
         >
 
             {/* Project Title section */}
-            <div className='row-span-2 grid justify-items-center items-center rounded-lg'>
+            <div className='row-span-2 grid justify-items-center items-center rounded-lg text-balance'>
                 <div className='text-center'>
                     <div className='text-sm sm:text-md md:text-lg lg:text-xl font-bold text-purple-950'>{projectName}</div>
                     <div className='text-xs sm:text-xs md:text-sm lg:text-sm font-medium text-slate-600'>{projectSubtitle}</div>
@@ -47,15 +57,14 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
                                 </div>
                             </div>
 
-                            :
+                            : showDescription &&
 
-                            <div className='grid size-full bg-neutral-200 opacity-20 rounded-lg'>
+                            <div className='grid justify-items-center items-center font-semibold text-xs md:text-sm lg:text-lg text-slate-800 text-center bg-gradient-to-t from-violet-500 to-violet-100 opacity-90 h-full w-full rounded-lg pl-2 pr-2 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6 text-balance'>
                                 {description}
                             </div>
 
                     }
                 </div>
-
             </div>
 
             {/* Languages used section */}

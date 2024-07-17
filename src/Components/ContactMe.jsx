@@ -9,9 +9,9 @@ import { FaLinkedin } from "react-icons/fa";
 
 const ContactMe = () => {
   return (
-    <div className='h-dvh w-full grid justify-items-center items-start pt-20' id="Contact">
+    <div className='h-fit md:h-dvh lg:h-dvh w-full grid grid-rows-12 pt-20' id="Contact">
 
-      <div className='grid w-full h-fit'>
+      <div className='row-span-2 md:row-span-3 lg:row-span-3 grid items-start w-full h-full'>
         <PageTitle
           title='Connect with Me'
           pageDiscriptionRequired='yes'
@@ -20,21 +20,16 @@ const ContactMe = () => {
         />
       </div>
 
-      <div className='h-fit w-full grid 
-        grid-flow-col grid-rows-2 gap-4
-        md:grid-flow-col md:grid-rows-1 md:gap-4
-        lg:grid-flow-col lg:grid-rows-1 lg:gap-0
-        xl:grid-flow-col xl:grid-rows-1 xl:gap-0
-        justify-items-start md:justify-items-center lg:justify-items-center 
-        items-center'
+      <div className='row-span-8 md:row-span-7 lg:row-span-7 h-full w-full 
+        grid sm:grid-cols-4
+        justify-self-center justify-items-center items-center'
       >
 
         <ContactIcons
           href='https://www.google.com/maps/place/Omkar+Builder/@18.9650257,72.8152597,20.54z/data=!4m6!3m5!1s0x3be7cfc36874f1cb:0x7f34679ac241d6c6!8m2!3d18.9650629!4d72.8150481!16s%2Fg%2F11sf0hxzr6?entry=ttu'
           icon={<ImLocation />}
           contactTitle='Address'
-          contactInfoText='207, Omkar CHS, Tardeo'
-          contactInfoTextLine2='Mumbai - 400007'
+          contactInfoText='207, Omkar CHS, Tardeo, Mumbai - 400007'
         />
 
         <ContactIcons
@@ -53,10 +48,11 @@ const ContactMe = () => {
         <ContactIcons
           icon={<FaLinkedin />}
           contactTitle='LinkedIn.'
+          contactInfoText='Salil Narvekar'
         />
       </div>
 
-      <div className='h-full w-full grid justify-items-center items-center'>
+      <div className='row-span-2 h-full w-full grid justify-items-center items-center py-4 md:py-0 lg:py-0'>
         <ContactForm />
       </div>
     </div>

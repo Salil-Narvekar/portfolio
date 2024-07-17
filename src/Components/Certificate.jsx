@@ -25,7 +25,7 @@ const Certificate = ({ href, certificateFor, certificateNo }) => {
             {
                 isHovered ?
 
-                    <div className='row-span-6 w-full h-full grid items-center font-semibold'>
+                    <div className='row-span-6 w-full h-full grid items-center font-semibold text-balance'>
                         <div className='grid justify-items-center'>
                             <div className='text-md md:text-lg lg:text-2xl'> View / Download Certificate PDF</div>
                             <TbExternalLink className='text-2xl md:text-3xl lg:text-4xl' />
@@ -34,7 +34,7 @@ const Certificate = ({ href, certificateFor, certificateNo }) => {
 
                     :
 
-                    <div className='row-span-6 grid grid-rows-2 justify-items-center items-center h-full w-full pl-2 pr-2'>
+                    <div className='row-span-6 grid grid-rows-2 justify-items-center items-center h-full w-full pl-2 pr-2 text-balance'>
                         <div className='font-serif font-bold text-lg md:text-2xl lg:text-3xl xl:text-4xl'>{"Certificate " + certificateNo}</div>
                         <div className='text-center font-sans font-semibold text-md md:text-xl lg:text-xl xl:text-2xl'>{certificateFor}</div>
                     </div>

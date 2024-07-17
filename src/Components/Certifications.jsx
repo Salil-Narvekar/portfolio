@@ -40,7 +40,7 @@ const Certifications = () => {
                     <PageTitle title='Positions of Responsibity' />
                 </div>
 
-                <div className='row-span-2 h-full w-full text-xs md:text-md lg:text-lg md:pl-6 lg:pl-6 py-2'>
+                <div className='row-span-2 h-full w-full text-xs md:text-md lg:text-lg md:pl-6 lg:pl-6 py-2 text-balance'>
                     <div>
                         <span className='font-bold'>{"Hospitality HOD: "}</span>
                         <span className='text-slate-700 font-medium'>{"College Annual Photography Event (Drishti Photography)"}</span>

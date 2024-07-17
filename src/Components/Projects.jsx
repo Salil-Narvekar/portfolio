@@ -16,7 +16,6 @@ import projectOwrtc2Img from '../projectOwrtc2.png'
 import projectOwrtc1Img from '../projectOwrtc1.png'
 import projectPartyImg from '../projectPartyImg.png'
 import projectAuth from '../projectAuth.png'
-import { useSwipeable } from 'react-swipeable';
 
 
 const Projects = () => {
@@ -38,6 +37,7 @@ const Projects = () => {
       name: "Organization Workflow (Version 0.0.2)",
       subtitle: "Personal Project",
       projectImageUrl: projectOwrtc2Img,
+      description: "It's Revamped version of my college final year project. A web application developed for Employee Management System with Role Specific Data Access, Data Visualization and Login & Client-Side data population in JSON. Developed web app using React.js, focusing on hocks, props, useState, useContext & useEffect.",
       languages: [ReactJs, Tailwind, JavaScript, JSON],
       gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
       gitCodeLink: 'https://github.com/Salil-Narvekar/owrtc.git'
@@ -46,6 +46,7 @@ const Projects = () => {
       name: "Party Planner",
       subtitle: "Personal Project",
       projectImageUrl: projectPartyImg,
+      description: 'Party Planner is a project to plan a party digitally including all the party aspects considering all details about the party. It focuses on the data manipulation & handeling on frontend itself',
       languages: [ReactJs, JavaScript, Tailwind],
       gitPagesLink: 'https://salil-narvekar.github.io/demoPartyPlanner/',
       gitCodeLink: 'https://github.com/Salil-Narvekar/demoPartyPlanner.git'
@@ -54,6 +55,7 @@ const Projects = () => {
       name: "Basic Authentication Interface",
       subtitle: "Personal Project",
       projectImageUrl: projectAuth,
+      description: 'It is a basic Authentication system to demonstrate user Sign up depending upon the registration dynamically. It is handled through frontend itself focusing on useReducer and useContext. It is a responsive webapp developed to support dynamic viewports',
       languages: [ReactJs, JavaScript, Tailwind],
       gitPagesLink: 'https://salil-narvekar.github.io/taskPopX/',
       gitCodeLink: 'https://github.com/Salil-Narvekar/taskPopX.git'
@@ -62,6 +64,7 @@ const Projects = () => {
       name: "Organization Workflow with Real Time Communication",
       subtitle: "College Final Year Project",
       projectImageUrl: projectOwrtc1Img,
+      description: 'A web application developed for Employee Management System. UI in HTML, CSS, Functionality in JavaScript & CRUD in PHP MySQL & Client-Side data population in JSON. Role Specific Data Access, Data Visualization and Login & Location Mapping Feature.',
       languages: [JavaScript, Html, CSS, PHP, MySql, JSON],
       gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
       gitCodeLink: 'https://github.com/Salil-Narvekar/owrtc.git'
@@ -71,15 +74,8 @@ const Projects = () => {
   const [currentPage, setCurrentpage] = useState(0)
   // console.log("currentPage from main", currentPage)
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => setCurrentpage(currentPage - 1),
-    onSwipedRight: () => setCurrentpage(currentPage + 1),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true
-  });
-
   return (
-    <div {...handlers} className='h-dvh grid grid-rows-14 pt-20' id="Projects">
+    <div className='h-dvh grid grid-rows-14 pt-20' id="Projects">
       <div className='row-span-2 grid items-start h-full w-full'>
         <PageTitle
           title='Featured Projects'
@@ -89,8 +85,7 @@ const Projects = () => {
       </div>
 
       <div className='row-span-11 grid justify-self-center items-center py-4 w-11/12 lg:w-10/12 h-full'>
-
-        <div className='col-span-8 w-full h-full'>
+        <div className='w-full h-full'>
           {
             projects.map((projectDetails, index) => (
 
@@ -101,6 +96,7 @@ const Projects = () => {
                 projectName={projectDetails.name}
                 projectSubtitle={projectDetails.subtitle}
                 projectImageUrl={projectDetails.projectImageUrl}
+                description={projectDetails.description}
                 languagesUsed={projectDetails.languages}
                 Git_pages_link={projectDetails.gitPagesLink}
                 Git_code_link={projectDetails.gitCodeLink}
@@ -108,7 +104,6 @@ const Projects = () => {
             ))
           }
         </div>
-
       </div>
 
       <div className='row-span-1 grid justify-items-center justify-self-center items-center w-full'>
