@@ -49,16 +49,16 @@ const Skills = () => {
   return (
     <div className='grid grid-rows-2 justify-items-center items-center h-full w-full'>
 
-      <div className='grid sm:grid-flow-col grid-flow-col grid-rows-2 md:grid-rows-1 md:grid-flow-col lg:grid-rows-1 lg:grid-flow-col gap-4 justify-items-center items-center'>
+      <div className='grid sm:grid-flow-col grid-flow-col grid-rows-2 md:grid-rows-1 md:grid-flow-col lg:grid-rows-1 lg:grid-flow-col gap-4 justify-items-center items-center animate-fadeFromBottom'>
         {skills}
       </div>
 
-      <div className='grid justify-items-center text-md md:text-xl lg:text-2xl xl:text-3xl font-bold w-full text-slate-600'>
+      <div className='grid justify-items-center w-full text-slate-600'>
         {
           skillKey ?
-            skillKey
+            <span className='text-md md:text-xl lg:text-2xl xl:text-3xl font-bold animate-fadeFromTop'>{skillKey}</span>
             :
-            <span className='text-slate-600 text-xs md:text-sm lg:text-sm font-medium'> - Hover to display skill name - </span>
+            <span className='text-xs md:text-sm lg:text-sm font-medium'> - Hover to display skill name - </span>
         }
       </div>
       

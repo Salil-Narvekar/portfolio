@@ -10,7 +10,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowDescription(true);
-        }, 1000);
+        }, 1500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -22,7 +22,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
             rounded-lg border border-purple-300 
             mt-3 md:mt-0 lg:mt-0
             hover:shadow-xl hover:shadow-purple-500/50 duration-700
-            animate-fadeIn'
+            animate-fadeFromRight'
         >
 
             {/* Project Title section */}
@@ -39,7 +39,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={() => window.open(Git_pages_link)}
             >
-                <div className='w-full h-full rounded-lg' style={{
+                <div className='w-full h-full rounded-lg animate-zoomIn' style={{
                     backgroundImage: `url(${projectImageUrl})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -59,7 +59,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
 
                             : showDescription &&
 
-                            <div className='grid justify-items-center items-center font-semibold text-xs md:text-sm lg:text-lg text-slate-800 text-center bg-gradient-to-t from-violet-500 to-violet-100 opacity-90 h-full w-full rounded-lg pl-2 pr-2 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6 text-balance'>
+                            <div className='grid justify-items-center items-center font-semibold text-xs md:text-sm lg:text-lg text-slate-800 text-center bg-gradient-to-t from-violet-500 to-violet-100 opacity-90 h-full w-full rounded-lg pl-2 pr-2 md:pl-4 md:pr-4 lg:pl-6 lg:pr-6 text-balance animate-zoomIn'>
                                 {description}
                             </div>
 

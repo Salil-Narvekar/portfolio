@@ -46,6 +46,7 @@ const ContactMe = () => {
         />
 
         <ContactIcons
+          href='https://www.linkedin.com/in/salil-narvekar-2a7a06280/'
           icon={<FaLinkedin />}
           contactTitle='LinkedIn.'
           contactInfoText='Salil Narvekar'

@@ -6,7 +6,7 @@ const NavContent = ({ navFor, navIcon }) => {
 
     return (
         <div
-            className='grid justify-items-start items-center rounded-3xl cursor-pointer h-8 w-8 lg:h-12 lg:w-12 pl-1 duration-500'
+            className='grid justify-items-start items-center rounded-3xl cursor-pointer h-8 w-8 lg:h-12 lg:w-12 pl-1 duration-500 animate-fadeFromLeft'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

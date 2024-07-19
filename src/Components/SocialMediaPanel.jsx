@@ -17,7 +17,7 @@ const SocialMediaPanel = () => {
 
     return (
         <div>
-            <div className='flex flex-cols-7 gap-1 lg:gap-4'>
+            <div className='flex flex-cols-7 gap-1 lg:gap-4 animate-fadeFromTop'>
                 
                 <div className='col-span-3'>
                     <Resume />
