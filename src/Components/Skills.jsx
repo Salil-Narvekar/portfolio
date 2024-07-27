@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { SkillIcon } from './SkillIcon'
 import { FaPython } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import { DiDjango } from "react-icons/di";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
@@ -25,6 +26,7 @@ const Skills = () => {
   const skillsObj = {
     'Python': <img src="https://img.icons8.com/fluency/100/python.png" alt={<FaPython />}/>,
     'React.js': <img src="https://img.icons8.com/plasticine/100/react.png" alt={<FaReact />}/>,
+    'Next.js': <SiNextdotjs />,
     'Django': <img src="https://img.icons8.com/color/100/django.png" alt={<DiDjango />}/>,
     'Vue.js': <img src="https://img.icons8.com/color/100/vue-js.png" alt={<IoLogoVue />}/>,
     'JavaScript': <img src="https://img.icons8.com/color/100/javascript--v1.png" alt={<TbBrandJavascript />}/>,
