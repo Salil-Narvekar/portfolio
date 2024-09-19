@@ -6,7 +6,7 @@ const Certifications = () => {
 
     const certificatesObj = {
         'https://drive.google.com/file/d/1pIav6FRFMDcAab6CTe-GxXbHfuBEIkTD/view?usp=drive_link': 'Internship Completion (EnPointe IT Services)',
-        'https://www.linkedin.com/in/salil-narvekar-2a7a06280/': 'Certified Python Developer (NetTech India)'
+        'https://drive.google.com/file/d/123oBeooUtRCR_eqUXO596fsMqlemnKNF/view': 'Certified Python Programmer (NetTech India)'
     }
 
     return (
@@ -43,12 +43,12 @@ const Certifications = () => {
                 <div className='row-span-2 h-full w-full text-xs md:text-md lg:text-lg md:pl-6 lg:pl-6 py-2 text-balance'>
                     <div>
                         <span className='font-bold'>{"Hospitality HOD: "}</span>
-                        <span className='text-slate-700 font-medium'>{"College Annual Photography Event (Drishti Photography)"}</span>
+                        <span className='text-slate-700 font-medium'>{"College's annual photography event (Drishti photography)"}</span>
                     </div>
 
                     <div>
-                        <span className='font-bold'>{"Event Head: "}</span>
-                        <span className='text-slate-700 font-medium'>{"College Annual Tech Event (Dot Tech)"}</span>
+                        <span className='font-bold'>{"Event head: "}</span>
+                        <span className='text-slate-700 font-medium'>{"College's annual tech event (Dot-tech)"}</span>
                     </div>
                 </div>
             </div>

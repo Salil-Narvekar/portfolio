@@ -7,7 +7,7 @@ const AboutDescription = () => {
                 '' Dedicated to grow & evolve with curiosity & creativity in the world of web development. ''
             </div>
             <div className='text-xs md:text-sm lg:text-md xl:text-lg text-slate-600 font-medium'> 
-                I am a <b className='text-violet-950'>Full Stack Web Developer</b> specializing in <b className='text-violet-950'>React.js & Python, </b> along with an experience in all the technical skills mentioned below. 
+                I am a <b className='text-violet-950'>Full stack web developer</b> specializing in <b className='text-violet-950'>React.js & Python, </b> along with an experience in all the technical skills mentioned below. 
             </div>
         </div>
     )

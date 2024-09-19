@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import PageTitle from './PageTitle'
 import ProjectPlate from './ProjectPlate'
-// import { FaPython } from "react-icons/fa";
-// import { DiDjango } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
@@ -16,13 +16,13 @@ import projectOwrtc2Img from '../projectOwrtc2.png'
 import projectOwrtc1Img from '../projectOwrtc1.png'
 import projectPartyImg from '../projectPartyImg.png'
 import projectAuth from '../projectAuth.png'
-
+import projectUserList from '../projectUserList.png'
 
 const Projects = () => {
 
   // Logos for Languages Used 
-  // const Python = <img src="https://img.icons8.com/fluency/30/python.png" alt={<FaPython />}/>
-  // const Django = <img src="https://img.icons8.com/color/30/django.png" alt={<DiDjango />}/>
+  const Python = <img src="https://img.icons8.com/fluency/30/python.png" alt={<FaPython />}/>
+  const Django = <img src="https://img.icons8.com/color/30/django.png" alt={<DiDjango />}/>
   const ReactJs = <img src="https://img.icons8.com/plasticine/30/react.png" alt={<FaReact />} />
   const Tailwind = <img src="https://img.icons8.com/fluency/30/tailwind_css.png" alt={<RiTailwindCssFill />} />
   const JavaScript = <img src="https://img.icons8.com/color/30/javascript--v1.png" alt={<TbBrandJavascript />} />
@@ -34,17 +34,17 @@ const Projects = () => {
 
   const projects = [
     {
-      name: "Organization Workflow (Version 0.0.2)",
-      subtitle: "Personal Project",
+      name: "Organization workflow (version 0.0.2)",
+      subtitle: "Featured project",
       projectImageUrl: projectOwrtc2Img,
-      description: "It's Revamped version of my college final year project. A web application developed for Employee Management System with Role Specific Data Access, Data Visualization and Login & Client-Side data population in JSON. Developed web app using React.js, focusing on hocks, props, useState, useContext & useEffect.",
-      languages: [ReactJs, Tailwind, JavaScript, JSON],
+      description: "A web application built using React.js & Tailwind CSS for frontend & Django Rest Framework for backend API. Project focuses on utilizing React hocks, props, state management, etc. along with a Python-based backend to create REST APIs using Django Rest Framework. It's Revamped version of my college final year project.",
+      languages: [ReactJs, Tailwind, JavaScript, Python, Django, JSON],
       gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
-      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtc.git'
+      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtcRevamped.git'
     },
     {
-      name: "Party Planner",
-      subtitle: "Personal Project",
+      name: "Party planner",
+      subtitle: "Personal project",
       projectImageUrl: projectPartyImg,
       description: 'Party Planner is a project to plan a party digitally including all the party aspects considering all details about the party. It focuses on the data manipulation & handeling on frontend itself',
       languages: [ReactJs, JavaScript, Tailwind],
@@ -52,8 +52,8 @@ const Projects = () => {
       gitCodeLink: 'https://github.com/Salil-Narvekar/demoPartyPlanner.git'
     },
     {
-      name: "Basic Authentication Interface",
-      subtitle: "Personal Project",
+      name: "Basic authentication interface",
+      subtitle: "Personal project",
       projectImageUrl: projectAuth,
       description: 'It is a basic Authentication system to demonstrate user Sign up depending upon the registration dynamically. It is handled through frontend itself focusing on useReducer and useContext. It is a responsive webapp developed to support dynamic viewports',
       languages: [ReactJs, JavaScript, Tailwind],
@@ -61,8 +61,17 @@ const Projects = () => {
       gitCodeLink: 'https://github.com/Salil-Narvekar/taskPopX.git'
     },
     {
-      name: "Organization Workflow with Real Time Communication",
-      subtitle: "College Final Year Project",
+      name: "Users listing",
+      subtitle: "Personal project",
+      projectImageUrl: projectUserList,
+      description: 'Users listing accordion developed manually, along with search filter & CRUD operations handled through frontend',
+      languages: [ReactJs, JavaScript, Tailwind],
+      gitPagesLink: 'https://salil-narvekar.github.io/usersAccordion/',
+      gitCodeLink: 'https://github.com/Salil-Narvekar/usersAccordion.git'
+    },
+    {
+      name: "Organization workflow with real time communication",
+      subtitle: "College final year project",
       projectImageUrl: projectOwrtc1Img,
       description: 'A web application developed for Employee Management System. UI in HTML, CSS, Functionality in JavaScript & CRUD in PHP MySQL & Client-Side data population in JSON. Role Specific Data Access, Data Visualization and Login & Location Mapping Feature.',
       languages: [JavaScript, Html, CSS, PHP, MySql, JSON],
