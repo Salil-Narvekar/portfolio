@@ -40,7 +40,7 @@ const Projects = () => {
       description: "A web application built using React.js & Tailwind CSS for frontend & Django Rest Framework for backend API. Project focuses on utilizing React hocks, props, state management, etc. along with a Python-based backend to create REST APIs using Django Rest Framework. It's Revamped version of my college final year project.",
       languages: [ReactJs, Tailwind, JavaScript, Python, Django, JSON],
       gitPagesLink: 'https://salil-narvekar.github.io/owrtcFrontend/',
-      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtcFrontend.git'
+      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtcRevamped.git'
     },
     {
       name: "Party planner",
