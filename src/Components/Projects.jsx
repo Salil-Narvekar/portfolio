@@ -39,8 +39,8 @@ const Projects = () => {
       projectImageUrl: projectOwrtc2Img,
       description: "A web application built using React.js & Tailwind CSS for frontend & Django Rest Framework for backend API. Project focuses on utilizing React hocks, props, state management, etc. along with a Python-based backend to create REST APIs using Django Rest Framework. It's Revamped version of my college final year project.",
       languages: [ReactJs, Tailwind, JavaScript, Python, Django, JSON],
-      gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
-      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtcRevamped.git'
+      gitPagesLink: 'https://salil-narvekar.github.io/owrtcFrontend/',
+      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtcFrontend.git'
     },
     {
       name: "Party planner",
@@ -68,16 +68,16 @@ const Projects = () => {
       languages: [ReactJs, JavaScript, Tailwind],
       gitPagesLink: 'https://salil-narvekar.github.io/usersAccordion/',
       gitCodeLink: 'https://github.com/Salil-Narvekar/usersAccordion.git'
-    },
-    {
-      name: "Organization workflow with real time communication",
-      subtitle: "College final year project",
-      projectImageUrl: projectOwrtc1Img,
-      description: 'A web application developed for Employee Management System. UI in HTML, CSS, Functionality in JavaScript & CRUD in PHP MySQL & Client-Side data population in JSON. Role Specific Data Access, Data Visualization and Login & Location Mapping Feature.',
-      languages: [JavaScript, Html, CSS, PHP, MySql, JSON],
-      gitPagesLink: 'https://salil-narvekar.github.io/owrtc/',
-      gitCodeLink: 'https://github.com/Salil-Narvekar/owrtc.git'
     }
+    // {
+    //   name: "Organization workflow with real time communication",
+    //   subtitle: "College final year project",
+    //   projectImageUrl: projectOwrtc1Img,
+    //   description: 'A web application developed for Employee Management System. UI in HTML, CSS, Functionality in JavaScript & CRUD in PHP MySQL & Client-Side data population in JSON. Role Specific Data Access, Data Visualization and Login & Location Mapping Feature.',
+    //   languages: [JavaScript, Html, CSS, PHP, MySql, JSON],
+    //   gitPagesLink: 'https://salil-narvekar.github.io/owrtcFrontend/',
+    //   gitCodeLink: 'https://github.com/Salil-Narvekar/owrtcFrontend.git'
+    // }
   ]
 
   const [currentPage, setCurrentpage] = useState(0)
