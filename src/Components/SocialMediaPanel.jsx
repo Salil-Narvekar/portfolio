@@ -10,7 +10,7 @@ const SocialMediaPanel = () => {
 
     const socials = {
         'https://mail.google.com/mail/?view=cm&fs=1&to=narvekarsalil1106@gmail.com': <BiLogoGmail />,
-        'https://www.linkedin.com/in/salil-narvekar-2a7a06280/': <FaLinkedin />,
+        'https://www.linkedin.com/in/salil-narvekar/': <FaLinkedin />,
         'https://github.com/Salil-Narvekar': <FaGithub />,
         'https://www.instagram.com/salil.11._/': <RiInstagramFill />,
     }
