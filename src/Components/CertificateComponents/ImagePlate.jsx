@@ -1,8 +1,12 @@
 import React from 'react'
 
-const ImagePlate = ({src, onClick}) => {
+const ImagePlate = ({ src, onClick }) => {
     return (
-        <img className={`hover:backdrop-opacity-50 ${onClick ? 'cursor-pointer' : 'cursor-move'} rounded-lg`} src={src} onClick={onClick} />
+        <img
+            className={`hover:backdrop-opacity-50 ${onClick ? 'cursor-pointer' : 'cursor-move'} rounded-lg`}
+            src={src}
+            onClick={onClick}
+        />
     )
 }
 
