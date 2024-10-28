@@ -1,32 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TextField from '@mui/material/TextField';
+import { Warning } from 'postcss';
+import { capitalize } from '@mui/material';
 
-const InputField = ({ label, textArea, onChange, validationMessage, error }) => {
+const InputField = ({ label, textArea, name, id, onChange, validationMessage, error, warning }) => {
     return (
         !textArea ?
             <TextField
-                className='bg-indigo-200 rounded-lg '
-                error={error}
+                name={name}
+                id={id}
                 label={label}
-                variant="outlined"
-                color='none'
-                fullWidth
                 onChange={onChange}
                 helperText={validationMessage}
+                error={error}
+                className='bg-indigo-200 rounded-lg'
+                sx={{
+                    "& .MuiInputBase-input": {
+                        textTransform: name !== 'email' ? 'capitalize' : 'none',
+                    }
+                }}
+                color={warning === null ? `none` : !warning ? `warning` : warning && `success`}
+                variant="outlined"
+                fullWidth
             />
             :
             <TextField
-                className='bg-indigo-200 rounded-lg'
-                error={error}
+                name={name}
+                id={id}
                 label={label}
-                variant="outlined"
-                color='none'
                 multiline
                 minRows={4}
                 maxRows={5}
-                fullWidth
                 onChange={onChange}
                 helperText={validationMessage}
+                error={error}
+                className='bg-indigo-200 rounded-lg'
+                variant="outlined"
+                color='none'
+                fullWidth
             />
     )
 }

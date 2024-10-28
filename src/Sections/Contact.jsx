@@ -15,21 +15,21 @@ const Contact = () => {
   })
 
   const [validationMessage, setValidationMessage] = useState(false)
+  const [validEmail, setValidEmail] = useState(null)
 
-  // validation & marque dynamic
   const validateEmail = (email) => {
     const format = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return format.test(email)
+    setValidEmail(format.test(email))
   }
 
   const sendMail = () => {
-    if (connectDetails.name && connectDetails.email && connectDetails.message) {
+    if (connectDetails.name && connectDetails.email && connectDetails.message && validEmail) {
 
       if (validateEmail) {
 
         setValidationMessage(false)
         window.open("https://mail.google.com/mail/?view=cm&fs=1&to=narvekarsalil1106@gmail.com&su=" + 'Through portfolio connect - Name: ' + connectDetails.name + ' | Email: ' + connectDetails.email +
-          "&body=" + connectDetails.message + '\n Regards \n' + connectDetails.name)
+          "&body=" + connectDetails.message + '%0A%0ARegards,%0A' + connectDetails.name)
 
       } else {
         setValidationMessage(true)
@@ -77,21 +77,29 @@ const Contact = () => {
           <div className='grid sm:grid-flow-col gap-2'>
 
             <InputField
+              name='email'
+              id='email'
               label='Your email'
-              validationMessage={validationMessage && !connectDetails.email && 'email required'}
-              onChange={(e) => setConnectDetails({ ...connectDetails, email: e.target.value })}
+              validationMessage={(validationMessage && !connectDetails.email) ? 'email required' : validEmail === false && 'enter a valid email'}
+              onChange={(e) => { setConnectDetails({ ...connectDetails, email: e.target.value }), validateEmail(e.target.value) }}
               error={validationMessage && !connectDetails.email && true}
+              warning={validEmail ? true : false}
             />
 
             <InputField
+              name='name'
+              id='name'
               label='Your name'
               validationMessage={validationMessage && !connectDetails.name && 'name required'}
               onChange={(e) => setConnectDetails({ ...connectDetails, name: e.target.value })}
               error={validationMessage && !connectDetails.name && true}
+              warning={null}
             />
           </div>
 
           <InputField
+            name='message'
+            id='message'
             label='Your message'
             validationMessage={validationMessage && !connectDetails.message && 'message required'}
             textArea={true}
