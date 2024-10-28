@@ -10,9 +10,9 @@ const FeaturedProjects = () => {
   return (
     <div id='Projects' className='bg-gradient-to-b from-indigo-200 to-slate-300 h-dvh pt-20'>
 
-      <div className='grid justify-self-center content-start text-slate-800 text-md md:text-2xl lg:text-3xl font-bold font-serif pb-2'> Featured projects </div>
+      <div className='grid justify-self-center content-start text-slate-800 text-md md:text-2xl lg:text-3xl text-center font-bold font-serif pb-2'> Featured projects </div>
 
-      <div className='grid justify-self-center items-center h-4/5 py-4 w-11/12 lg:w-10/12'>
+      <div className='grid justify-self-center justify-center justify-items-center items-center h-4/5 py-4 w-11/12 lg:w-10/12'>
         {
           projects.map((projectDetails, index) => (
 

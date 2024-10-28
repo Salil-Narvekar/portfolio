@@ -74,7 +74,7 @@ const Contact = () => {
       <div className='grid sm:grid-cols-2 pl-12 md:pl-20 lg:pl-20'>
         <div className='grid sm:grid-flow-row gap-2 justify-start content-start'>
 
-          <div className='grid sm:grid-flow-col gap-2'>
+          <div className='grid grid-flow-row md:grid-flow-col lg:grid-flow-col gap-2'>
 
             <InputField
               name='email'
