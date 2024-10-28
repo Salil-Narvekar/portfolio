@@ -37,6 +37,10 @@ export default {
           '100%': { transform: 'scale(1) translateY(0)' },
         },
 
+        fadeFromBottomTip: {
+          '0%': { transform: 'translateY(150%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
 
       animation: {
@@ -44,6 +48,7 @@ export default {
         fadeFromRight: 'fadeFromRight 0.5s ease-in-out forwards',
         fadeFromTop: 'fadeFromTop 0.5s ease-in-out forwards',
         fadeFromBottom: 'fadeFromBottom 0.5s ease-in-out forwards',
+        fadeFromBottomTip: 'fadeFromBottomTip 1s ease-in-out forwards',
         zoomIn: 'zoomIn 0.8s ease-in-out forwards',
       },
     },

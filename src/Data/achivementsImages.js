@@ -4,8 +4,8 @@ import hod from '../Images/hod.jpg';
 
 const achivementsImages = [
     { title: 'HOD hospitality', image: hod },
-    { title: 'Event head speach', image: eventHead },
-    { title: 'Event head', image: eventHead2 },
+    { title: 'Event head', image: eventHead },
+    { title: 'Event head speach', image: eventHead2 },
 ]
 
 export default achivementsImages

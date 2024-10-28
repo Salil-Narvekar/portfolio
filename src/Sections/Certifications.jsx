@@ -16,7 +16,7 @@ const Certifications = () => {
         <div className='grid sm:grid-flow-col gap-2'>
           {
             certificates.map((certificate, index) => (
-              <ImagePlate key={index} src={certificate.image} onClick={() => window.open(certificate.url)} />
+              <ImagePlate key={index} src={certificate.image} title={certificate.title} onClick={() => window.open(certificate.url)} />
             ))
           }
         </div>
@@ -24,7 +24,7 @@ const Certifications = () => {
         <div className='grid sm:grid-cols-3 sm:grid-flow-row gap-2'>
           {
             achivementsImages.map((achivement, index) => (
-              <ImagePlate key={index} src={achivement.image} />
+              <ImagePlate key={index} src={achivement.image} title={achivement.title} />
             ))
           }
         </div>
