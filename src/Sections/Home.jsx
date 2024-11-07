@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ResumeButton from '../Components/ResumeButton'
 import SkillsPlate from '../Components/SkillsPlate'
 import TypewriterComponent from 'typewriter-effect'
 
 const Home = () => {  
   return (
-    <div id='Home' className=' grid grid-rows-3 content-center h-dvh pt-10 md:pt-20 lg:pt-20 bg-gradient-to-b from-indigo-300 to-indigo-200' >
+    <div id='Home' className='grid grid-rows-3 content-center h-dvh pt-10 md:pt-20 lg:pt-20 bg-gradient-to-b from-indigo-300 to-indigo-200 overflow-hidden'>
 
       <div className='grid justify-items-center md:justify-items-start lg:justify-items-start content-center pl-4 md:pl-20 lg:pl-20'>
         <div className='text-xs md:text-lg lg:text-2xl xl:text-3xl font-normal text-slate-500 font-serif' data-aos-offset="90" data-aos-mirror="true" data-aos='fade-right'> Welcome to my portfolio!</div>
         <div className='text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold font-serif text-violet-950' data-aos-offset="120" data-aos-mirror="true" data-aos='fade-right'> Salil Narvekar </div>
         
-        <div className='text-xs md:text-2xl lg:text-3xl font-medium font-sans text-slate-600' data-aos-offset="120" data-aos-mirror="true" data-aos='zoom-out-right'>
+        <div className='text-xs md:text-2xl lg:text-3xl font-medium font-sans text-slate-600 text-center md:text-left lg:text-left' data-aos-offset="120" data-aos-mirror="true" data-aos='zoom-out-right'>
           
           <TypewriterComponent
             options={{
@@ -32,7 +32,7 @@ const Home = () => {
             }}
           />
 
-          <div className='grid justify-items-center md:justify-items-start lg:justify-items-start mt-2'>
+          <div className='grid justify-items-center md:justify-items-start lg:justify-items-start mt-2' data-aos-mirror="true" data-aos='flip-up'>
             <ResumeButton />
           </div>
         </div>

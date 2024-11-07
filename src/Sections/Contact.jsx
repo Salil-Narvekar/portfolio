@@ -41,7 +41,7 @@ const Contact = () => {
   }
 
   return (
-    <div id='Contact' className='bg-gradient-to-b from-indigo-300 to-indigo-200 h-full md:h-dvh lg:h-dvh pt-20 pb-10 md:pb-0 lg:pb-0'>
+    <div id='Contact' className='bg-gradient-to-b from-indigo-300 to-indigo-200 h-full md:h-dvh lg:h-dvh pt-20 pb-10 md:pb-0 lg:pb-0 overflow-hidden'>
 
       <div className='grid sm:grid-cols-2 h-2/4 gap-4 md:gap-0 lg:gap-0 pr-4'>
 

@@ -8,7 +8,7 @@ const FeaturedProjects = () => {
   const [currentPage, setCurrentpage] = useState(0)
 
   return (
-    <div id='Projects' className='bg-gradient-to-b from-indigo-200 to-slate-300 h-dvh pt-20'>
+    <div id='Projects' className='bg-gradient-to-b from-indigo-200 to-slate-300 h-dvh pt-20 overflow-hidden'>
 
       <div className='grid justify-self-center content-start text-slate-800 text-md md:text-2xl lg:text-3xl text-center font-bold font-serif pb-2'> Featured projects </div>
 

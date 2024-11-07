@@ -1,10 +1,9 @@
 import React from 'react'
-import { FaUser } from "react-icons/fa";
 import profilePicture from '../../Images/profilePicture.png'
 
 const DisplayPicture = () => {
     return (
-        <div className='grid justify-center items-end content-end'>
+        <div className='grid justify-center items-end content-end' data-aos-offset="80" data-aos-mirror="true" data-aos='fade-up'>
             <img
                 src={profilePicture}
                 alt='Profile picture unavailable!!'

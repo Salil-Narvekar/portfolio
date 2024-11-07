@@ -2,7 +2,7 @@ import React from 'react'
 
 const Description = () => {
     return (
-        <div className='border-gray-900 border-t rounded-xl font-semibold text-slate-900 text-balance text-xs md:text-md lg:text-md xl:text-lg py-4 pl-4 pr-2 w-full'>
+        <div className='border-gray-900 border-t rounded-xl font-semibold text-slate-900 text-balance text-xs md:text-md lg:text-md xl:text-lg py-4 pl-4 pr-2 w-full' data-aos-offset="160" data-aos-mirror="true" data-aos='fade-left'>
             Hello, I'm <b className='text-violet-950'>Salil Narvekar, </b> <br />
             a passionate junior web developer with a love for crafting clean, efficient, and user-friendly web experiences. <br />
             I specialize in building responsive websites and applications using modern technologies like React, Python, HTML, CSS, JavaScript, and Vue. <br />

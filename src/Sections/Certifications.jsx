@@ -6,7 +6,7 @@ import certificates from '../Data/certificates'
 const Certifications = () => {
 
   return (
-    <div id='Certifications' className='bg-gradient-to-b from-slate-300 to-indigo-300 h-full pt-20'>
+    <div id='Certifications' className='bg-gradient-to-b from-slate-300 to-indigo-300 h-full pt-20 overflow-hidden'>
 
       <div className='grid justify-self-center text-center content-start text-slate-800 text-md md:text-2xl lg:text-3xl font-bold font-serif'> Certifications & Positions of Responsibity </div>
 

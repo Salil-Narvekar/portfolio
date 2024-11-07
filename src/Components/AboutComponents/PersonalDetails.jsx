@@ -2,7 +2,7 @@ import React from 'react'
 
 const PersonalDetails = () => {
   return (
-    <div className='grid grid-flow-row gap-2 justify-end content-start font-semibold text-slate-900 text-balance text-xs md:text-md lg:text-md xl:text-lg py-4'>
+    <div className='grid grid-flow-row gap-2 justify-end content-start font-semibold text-slate-900 text-balance text-xs md:text-md lg:text-md xl:text-lg py-4' data-aos-offset="160" data-aos-mirror="true" data-aos='fade-right'>
       <span>- Salil Narvekar</span>
       <span>- narvekarsalil1106@gmail.com</span>
       <span>- +91 9869757298</span>

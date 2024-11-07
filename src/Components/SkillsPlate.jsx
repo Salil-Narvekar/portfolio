@@ -37,7 +37,7 @@ const SkillsPlate = () => {
                 }
             </div>
 
-            <div className='grid justify-center content-center md:content-start lg:content-start w-full text-slate-600' data-aos-offset="100" data-aos-mirror="true" data-aos='zoom-out-up'>
+            <div className='grid justify-center content-center md:content-start lg:content-start w-full text-slate-600' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out-up'>
                 {
                     skillName ?
                         <span className='text-md md:text-xl lg:text-2xl xl:text-2xl font-semibold animate-fadeFromTop'>{skillName}</span>
