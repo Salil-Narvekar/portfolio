@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
 
       <div className='grid justify-self-center content-start text-slate-800 text-md md:text-2xl lg:text-3xl text-center font-bold font-serif pb-2'> Featured projects </div>
 
-      <div className='grid justify-self-center justify-center justify-items-center items-center h-4/5 py-4 w-11/12 lg:w-10/12'>
+      <div className='grid justify-items-center h-4/5 py-4'>
         {
           projects.map((projectDetails, index) => (
 

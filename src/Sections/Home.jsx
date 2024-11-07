@@ -1,11 +1,11 @@
 import React from 'react'
 import ResumeButton from '../Components/ResumeButton'
 import SkillsPlate from '../Components/SkillsPlate'
+// import '../transition.css';
 
 const Home = () => {
   return (
-    // style={{backgroundColor: '#E1E0FF'}}
-    <div id='Home' className='grid grid-rows-3 content-center h-dvh pt-10 md:pt-20 lg:pt-20 bg-gradient-to-b from-indigo-300 to-indigo-200' >
+    <div id='Home'className=' grid grid-rows-3 content-center h-dvh pt-10 md:pt-20 lg:pt-20 bg-gradient-to-b from-indigo-300 to-indigo-200' >
 
       <div className='grid justify-items-center md:justify-items-start lg:justify-items-start content-center pl-4 md:pl-20 lg:pl-20'>
         <div className='text-xs md:text-lg lg:text-2xl xl:text-3xl font-normal text-slate-500 font-serif animate-fadeFromTop'> Welcome to my portfolio!</div>

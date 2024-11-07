@@ -19,7 +19,7 @@ const ProjectPlate = ({projectName, projectSubtitle, projectImageUrl, descriptio
     return (
         <div
             className='bg-sky-50
-            grid sm:grid-rows-12 h-full w-full
+            grid sm:grid-rows-12 h-full w-9/12 md:w-10/12 lg:w-10/12
             rounded-lg border border-purple-300 
             hover:shadow-xl hover:shadow-purple-500/50 duration-700
             animate-fadeFromRight'
@@ -34,7 +34,7 @@ const ProjectPlate = ({projectName, projectSubtitle, projectImageUrl, descriptio
             </div>
 
             {/* Project Window section */}
-            <div className="row-span-8 grid justify-items-center justify-self-center w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 h-full border border-neutral-300 bg-slate-300 rounded-lg cursor-pointer "
+            <div className="row-span-8 grid justify-items-center justify-self-center w-11/12 md:w-10/12 lg:min-w-9/12 xl:min-w-8/12 h-full border border-neutral-300 bg-slate-300 rounded-lg cursor-pointer "
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={() => Git_pages_link && window.open(Git_pages_link)}
