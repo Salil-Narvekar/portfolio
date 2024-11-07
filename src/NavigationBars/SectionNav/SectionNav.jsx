@@ -17,7 +17,7 @@ const SectionNav = () => {
   ]
 
   return (
-    <div className='grid grid-flow-row gap-4 justify-center content-center position fixed z-10 w-12 h-dvh'>
+    <div className='grid grid-flow-row gap-4 justify-center content-center position fixed z-10 w-12 h-dvh' data-aos='zoom-out-right'>
       {
         navItems.map((navItems, index) => (
           <Link
