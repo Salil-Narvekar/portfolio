@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect }  from 'react'
 import ResumeButton from '../Components/ResumeButton'
 import PersonalDetails from '../Components/AboutComponents/PersonalDetails'
 import Description from '../Components/AboutComponents/Description'
@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div id='About' className='grid grid-rows-8 justify-center bg-gradient-to-b from-indigo-200 to-gray-600 h-full md:h-dvh lg:h-dvh pt-20'>
 
-      <div className='row-span-1 grid justify-items-center content-start'>
+      <div className='row-span-1 grid justify-items-center content-start' data-aos='fade-down'>
         <span className='text-slate-800 text-md md:text-lg lg:text-3xl font-bold font-serif'> Web Developer & Freelancer </span>
         <div className='text-slate-700 text-xs md:text-sm lg:text-md font-medium '> React.js . Python . Django . Fullstack </div>
       </div>
