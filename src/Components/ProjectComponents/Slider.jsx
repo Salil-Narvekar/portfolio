@@ -21,6 +21,7 @@ const Slider = ({ pageCount, setCurrentpageProp }) => {
                             :
                             'bg-purple-300 border-2 border-purple-400 hover:bg-purple-900 duration-300 h-4 w-4 md:h-5 md:w-5 lg:h-5 lg:w-5 xl:h-6 xl:w-6 rounded-full cursor-pointer'
                         }
+                        data-aos-offset="10" data-aos-mirror="true" data-aos='flip-right' data-aos-delay={index + '00'}
                     ></div>
                 ))
             }

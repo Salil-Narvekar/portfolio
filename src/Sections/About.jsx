@@ -10,7 +10,7 @@ const About = () => {
 
       <div className='row-span-1 grid justify-items-center content-start' data-aos-offset="100" data-aos-mirror="true" data-aos='zoom-out'>
         <span className='text-slate-800 text-md md:text-lg lg:text-3xl font-bold font-serif'> Web Developer & Freelancer </span>
-        <div className='text-slate-700 text-xs md:text-sm lg:text-md font-medium' data-aos-delay="100" data-aos-mirror="true" data-aos='zoom-out'> React.js . Python . Django . Fullstack </div>
+        <div className='text-slate-700 text-xs md:text-sm lg:text-md font-medium' data-aos-mirror="true" data-aos='zoom-out'> React.js . Python . Django . Fullstack </div>
       </div>
 
       <div className='row-span-6 grid sm:grid-cols-3 justify-items-center border-b-2 border-neutral-400 ml-16 mr-16 rounded'>
