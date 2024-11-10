@@ -18,7 +18,9 @@ const TopNav = () => {
   return (
     <div className='grid grid-flow-col gap-2 md:gap-3 lg:gap-3 justify-end content-center position fixed backdrop-blur-md z-10 w-full h-14 pr-3' data-aos='fade-left'>
 
-      <ResumeButton />
+      <div data-aos='flip-up'>
+        <ResumeButton />
+      </div>
 
       {
         navItems.map((navItems, index) => (

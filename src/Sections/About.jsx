@@ -19,8 +19,7 @@ const About = () => {
         <PersonalDetails />
       </div>
 
-      {/* Note: animation issue here 'button not animating on viewport' */}
-      <div className='grid justify-center content-center' data-aos-mirror="true">
+      <div className='grid justify-center content-center'>
         <ResumeButton />
       </div>
 

@@ -18,7 +18,6 @@ const ResumeButton = () => {
                 backgroundColor: '#482577'
             }}
             onClick={() => window.open(resumeUrl)}
-            data-aos='flip-up'
         >
             View / Download Resume
         </Button>
