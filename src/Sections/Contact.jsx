@@ -46,9 +46,9 @@ const Contact = () => {
       <div className='grid sm:grid-cols-2 h-2/4 gap-4 md:gap-0 lg:gap-0 pr-4'>
 
         <div className='font-serif content-center justify-items-center pl-10 md:pl-20 lg:pl-20'>
-          <span className='text-slate-600 font-extralight text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>Let's build </span><br />
-          <span className='text-slate-600 font-light text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>something </span><br />
-          <span className='text-slate-800 font-extrabold text-3xl md:text-4xl lg:text-5xl xl:text-7xl'>great together.</span>
+          <span className='text-slate-600 font-extralight text-2xl md:text-3xl lg:text-4xl xl:text-5xl' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="100">Let's build </span><br />
+          <span className='text-slate-600 font-light text-2xl md:text-3xl lg:text-4xl xl:text-5xl' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="300">something </span><br />
+          <span className='text-slate-800 font-extrabold text-3xl md:text-4xl lg:text-5xl xl:text-7xl' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="500">great together.</span>
         </div>
 
         <Marquee
@@ -60,10 +60,10 @@ const Contact = () => {
           pauseOnHover={true}
           play={true}
         >
-          <div className='grid grid-flow-col gap-20 mr-20'>
+          <div className='grid grid-flow-col gap-20 mr-20' data-aos-offset="80" data-aos-mirror="true" data-aos='fade-left' data-aos-delay="1500">
             {
               marqueeContent.map((content, index) => (
-                <MarqueeCell key={index} cellLogo={content.cellLogo} cellTitle={content.cellTitle} />
+                <MarqueeCell key={index} index={index} cellLogo={content.cellLogo} cellTitle={content.cellTitle} />
               ))
             }
           </div>
@@ -72,7 +72,7 @@ const Contact = () => {
       </div>
 
       <div className='grid sm:grid-cols-2 pl-12 md:pl-20 lg:pl-20'>
-        <div className='grid sm:grid-flow-row gap-2 justify-start content-start'>
+        <div className='grid sm:grid-flow-row gap-2 justify-start content-start' data-aos-offset="10" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="400">
 
           <div className='grid grid-flow-row md:grid-flow-col lg:grid-flow-col gap-2'>
 

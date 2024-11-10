@@ -16,6 +16,7 @@ const Button = ({ label, buttonIcon, variant, onClick }) => {
                 padding: { xs: '2px 8px', sm: '4px 12px', md: '4px 12px', lg: '4px 10px' },
             }}
             onClick={onClick}
+            data-aos-offset="10" data-aos-mirror="true" data-aos='flip-up' data-aos-delay="1000"
         >
             {label}
         </ButtonUI>
