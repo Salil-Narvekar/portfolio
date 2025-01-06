@@ -7,6 +7,8 @@ const skillIconUrl = {
     next: <SiNextdotjs />,
     vue: <img src="https://img.icons8.com/color/vue-js.png" alt="Vue" />,
     javaScript: <img src="https://img.icons8.com/color/javascript--v1.png" alt="JavaScript" />,
+    node: <img src="https://img.icons8.com/color/nodejs.png" alt="node"/>,
+    express: <img src="https://img.icons8.com/color/express-js.png" alt="expressJs" />,
     django: <img src="https://img.icons8.com/color/django.png" alt="Django" />,
     restApi: <img src="https://img.icons8.com/fluency/api-settings.png" alt="API" />,
     html: <img src="https://img.icons8.com/color/html-5--v1.png" alt="HTML" />,

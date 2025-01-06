@@ -7,10 +7,12 @@ const SkillsPlate = () => {
 
     const skillArray = [
         { name: 'Python', icon: skillIconUrls.python},
-        { name: 'React.js', icon: skillIconUrls.react },
-        { name: 'Next.js', icon: <SiNextdotjs /> },
-        { name: 'Vue.js', icon: skillIconUrls.vue },
+        { name: 'React Js', icon: skillIconUrls.react },
+        { name: 'Next Js', icon: <SiNextdotjs /> },
+        { name: 'Vue Js', icon: skillIconUrls.vue },
         { name: 'JavaScript', icon: skillIconUrls.javaScript },
+        { name: 'Node Js', icon: skillIconUrls.node },
+        { name: 'Express Js', icon: skillIconUrls.express },
         { name: 'Django Rest Framework', icon: skillIconUrls.django },
         { name: 'REST API', icon: skillIconUrls.restApi },
         { name: 'Html 5', icon: skillIconUrls.html },
