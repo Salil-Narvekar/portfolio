@@ -13,6 +13,7 @@ const SkillsPlate = () => {
         { name: 'JavaScript', icon: skillIconUrls.javaScript },
         { name: 'Node Js', icon: skillIconUrls.node },
         { name: 'Express Js', icon: skillIconUrls.express },
+        { name: 'Mongo DB', icon: skillIconUrls.mongoDB },
         { name: 'Django Rest Framework', icon: skillIconUrls.django },
         { name: 'REST API', icon: skillIconUrls.restApi },
         { name: 'Html 5', icon: skillIconUrls.html },
