@@ -8,7 +8,7 @@ const DisplayPicture = () => {
                 src={profilePicture}
                 alt='Profile picture unavailable!!'
                 loading="lazy"
-                style={{height:'450px', width: '300px'}}
+                style={{height:'450px', width: '450px'}}
             />
         </div>
     )
