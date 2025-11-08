@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        righteous: ['Righteous', 'sans-serif'], // Use 'Righteous' as the font family name
+      },
+
       gridTemplateRows: {
         '14': 'repeat(14, minmax(0, 1fr))',
         'layout': '200px minmax(900px, 1fr) 100px',

@@ -7,6 +7,7 @@ import FeaturedProjects from '../Sections/FeaturedProjects'
 import Certifications from '../Sections/Certifications'
 import Contact from '../Sections/Contact'
 import Footer from '../Sections/Footer'
+import "../main.css";
 
 const landingPage = () => {
   return (
