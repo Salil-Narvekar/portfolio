@@ -132,6 +132,8 @@ section {
 }
 
 
+
+/* Responsive  */
 @media (max-width: 1024px) {
     .homePageLayout {
         padding: 70px 20px;
