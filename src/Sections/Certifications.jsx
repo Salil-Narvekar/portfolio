@@ -8,7 +8,7 @@ const Certifications = () => {
   return (
     <div id='Certifications' className='bg-gradient-to-b from-slate-300 to-indigo-300 h-full pt-20 overflow-hidden'>
 
-      <div className='grid justify-self-center text-center content-start text-slate-800 text-md md:text-2xl lg:text-3xl font-bold font-serif' data-aos-offset="100" data-aos-mirror="true" data-aos='zoom-out'> Certifications & Positions of Responsibity </div>
+      <div className='sectionTitle' data-aos-offset="100" data-aos-mirror="true" data-aos='zoom-out'> Certifications & Positions of Responsibity </div>
 
       <div className='bg-gradient-to-b from-indigo-200 to-gray-400 h-12'></div>
 
