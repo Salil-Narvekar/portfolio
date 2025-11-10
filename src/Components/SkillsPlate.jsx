@@ -23,6 +23,7 @@ const SkillsPlate = () => {
         { name: 'REST API', icon: skillIconUrls.restApi },
         { name: 'HTML 5', icon: skillIconUrls.html },
         { name: 'CSS 3', icon: skillIconUrls.css },
+        { name: 'SCSS', icon: skillIconUrls.sass },
         { name: 'Tailwind CSS', icon: skillIconUrls.tailwindCss },
         { name: 'Material UI', icon: skillIconUrls.materialUi },
         { name: 'Bootstrap', icon: skillIconUrls.bootstrap },

@@ -46,13 +46,13 @@ const Contact = () => {
       <div className='grid sm:grid-cols-2 h-2/4 gap-4 md:gap-0 lg:gap-0 pr-4'>
 
         <div className='font-serif content-center justify-items-center pl-10 md:pl-20 lg:pl-20'>
-          <span className='text-slate-600 font-extralight text-2xl md:text-3xl lg:text-4xl xl:text-5xl' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="100">Let's build </span><br />
-          <span className='text-slate-600 font-light text-2xl md:text-3xl lg:text-4xl xl:text-5xl' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="300">something </span><br />
-          <span className='text-slate-800 font-extrabold text-3xl md:text-4xl lg:text-5xl xl:text-7xl' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="500">great together.</span>
+          <span className='text-slate-600 contactTitle' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="100">Let's build </span><br />
+          <span className='text-slate-600 contactTitle' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="300">something </span><br />
+          <span className='text-slate-800 contactTitleDark' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out' data-aos-delay="500">great together.</span>
         </div>
 
         <Marquee
-          className='content-center cursor-grab'
+          className='content-center cursor-grab marquee'
           behavior="scroll"
           direction="left"
           loop={0}

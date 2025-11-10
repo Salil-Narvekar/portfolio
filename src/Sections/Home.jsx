@@ -18,10 +18,8 @@ const Home = () => {
               strings: [
                 'Data Analyst & Scientist.',
                 'Python Developer with AI ML Experties.',
-                'Freelance React Developer.',
                 'Freelance Frontend Web Developer.',
-                'Freelance Full Stack Web Developer.',
-                'Freelance Next.js Developer.'
+                'Freelance Full Stack Web Developer.'
               ],
               autoStart: true,
               loop: true,

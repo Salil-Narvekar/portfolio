@@ -151,6 +151,43 @@ section {
     text-align: center;
 }
 
+.footerWatermark {
+    color: #475569;
+    font-size: 15px;
+    font-family: "Righteous", sans-serif !important;
+    font-weight: 100 !important;
+}
+
+.copyrightWatermark {
+    color: #475569;
+    font-size: 13px;
+    font-family: "Offset", sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.contactTitle {
+    font-size: 45px;
+    font-family: "Righteous", sans-serif !important;
+    font-weight: 100 !important;
+}
+
+.contactTitleDark {
+    font-size: 65px;
+    font-family: "Righteous", sans-serif !important;
+}
+
+.inputBox {
+    font-family: "Righteous", sans-serif !important;
+}
+
+.marquee {
+    color: #1E293B;
+    font-size: 45px;
+    font-family: "Righteous", sans-serif !important;
+    font-weight: 100 !important;
+}
+
+
 /* Responsive  */
 @media (max-width: 1024px) {
     .homePageLayout {
@@ -196,6 +233,28 @@ section {
     .subtitle {
         font-size: 16px;
         margin-top: 2px;
+    }
+
+    .contactTitle {
+        font-size: 48px !important;
+    }
+
+    .contactTitleDark {
+        font-size: 54px !important;
+    }
+
+    .marquee {
+        font-size: 35px !important;
+    }
+
+    .footerWatermark {
+        font-size: 14px;
+    }
+
+    .copyrightWatermark {
+        margin-top: 40px;
+        line-height: 1.3;
+        font-size: 10px;
     }
 }
 
@@ -247,6 +306,29 @@ section {
     .subtitle {
         font-size: 14px;
         margin-top: 2px;
+    }
+
+    .contactTitle {
+        font-size: 42px !important;
+    }
+
+    .contactTitleDark {
+        font-size: 40px !important;
+    }
+
+    .marquee {
+        font-size: 25px !important;
+        margin-left: 48px;
+    }
+
+    .footerWatermark {
+        font-size: 12px;
+    }
+
+    .copyrightWatermark {
+        margin-top: 40px;
+        line-height: 1.3;
+        font-size: 9px;
     }
 }
 
@@ -311,5 +393,28 @@ section {
     .subtitle {
         font-size: 12px;
         margin-top: 6px;
+    }
+
+    .contactTitle {
+        font-size: 25px !important;
+    }
+
+    .contactTitleDark {
+        font-size: 36px !important;
+    }
+
+    .marquee {
+        font-size: 25px !important;
+        margin-left: 48px;
+    }
+
+    .footerWatermark {
+        font-size: 12px;
+    }
+
+    .copyrightWatermark {
+        margin-top: 10px;
+        line-height: 1.3;
+        font-size: 9px;
     }
 }

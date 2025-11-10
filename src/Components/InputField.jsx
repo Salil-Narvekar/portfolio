@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
 import TextField from '@mui/material/TextField';
-import { Warning } from 'postcss';
-import { capitalize } from '@mui/material';
+import "../main.css";
 
 const InputField = ({ label, textArea, name, id, onChange, validationMessage, error, warning }) => {
     return (
@@ -13,7 +11,7 @@ const InputField = ({ label, textArea, name, id, onChange, validationMessage, er
                 onChange={onChange}
                 helperText={validationMessage}
                 error={error}
-                className='bg-indigo-200 rounded-lg'
+                className='bg-indigo-200 rounded-lg inputBox'
                 sx={{
                     "& .MuiInputBase-input": {
                         textTransform: name !== 'email' ? 'capitalize' : 'none',
@@ -34,7 +32,7 @@ const InputField = ({ label, textArea, name, id, onChange, validationMessage, er
                 onChange={onChange}
                 helperText={validationMessage}
                 error={error}
-                className='bg-indigo-200 rounded-lg'
+                className='bg-indigo-200 rounded-lg inputBox'
                 variant="outlined"
                 color='none'
                 fullWidth

@@ -10,7 +10,7 @@ const FeaturedProjects = () => {
   return (
     <div id='Projects' className='bg-gradient-to-b from-indigo-200 to-slate-300 h-dvh pt-20 overflow-hidden'>
 
-      <div className='sectionTitle' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out-up'> Featured projects </div>
+      <div className='sectionTitle' data-aos-offset="80" data-aos-mirror="true" data-aos='zoom-out-up'> Featured projects - Web development </div>
 
       <div className='grid justify-items-center h-4/5 py-4' data-aos-offset="80" data-aos-mirror="true" data-aos='slide-left'>
         {
