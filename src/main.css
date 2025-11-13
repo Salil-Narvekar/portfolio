@@ -187,6 +187,64 @@ section {
     font-weight: 100 !important;
 }
 
+.certificate-swiper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 90dvh;
+    background-color: #9ca4b0;
+    border-radius: 20px;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-swiper {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.swiper-button-prev-custom {
+    border-radius: 0 50px 50px 0;
+    left: 0px;
+}
+
+.swiper-button-next-custom {
+    border-radius: 50px 0 0 50px;
+    right: 0px;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #2E1065;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-prev-custom:hover {
+    background-color: #1E293B;
+}
+
+.swiper-button-next-custom:hover {
+    background-color: #1E293B;
+}
 
 /* Responsive  */
 @media (max-width: 1024px) {
@@ -316,6 +374,13 @@ section {
         font-size: 40px !important;
     }
 
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
     .marquee {
         font-size: 25px !important;
         margin-left: 48px;
@@ -401,6 +466,20 @@ section {
 
     .contactTitleDark {
         font-size: 36px !important;
+    }
+
+    .hero-swiper,
+    .banner-slide,
+    .banner-overlay {
+        padding: 0 50px;
+        line-height: 1.1;
+    }
+
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
     }
 
     .marquee {
