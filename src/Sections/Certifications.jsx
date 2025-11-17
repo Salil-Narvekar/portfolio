@@ -40,10 +40,6 @@ const Certifications = () => {
                     <div className="img-container">
                       <img src={certificate.image} alt="Certificate image Unavailable" />
                     </div>
-
-                    <div className="banner-overlay" onClick={() => window.open(certificate.url)}>
-                      <h1>{certificate.title}</h1>
-                    </div>
                   </div>
                 </SwiperSlide>
               ))
