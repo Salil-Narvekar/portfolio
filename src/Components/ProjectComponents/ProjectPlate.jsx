@@ -19,7 +19,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
     return (
         <div
             className='bg-sky-50
-            grid sm:grid-rows-12 h-full w-9/12 md:w-10/12 lg:w-10/12
+            grid sm:grid-rows-12 w-9/12 md:w-10/12 lg:w-10/12
             rounded-lg border border-purple-300 
             hover:shadow-xl hover:shadow-purple-500/50 duration-700'
             data-aos='slide-left'
@@ -34,7 +34,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
             </div>
 
             {/* Project Window section */}
-            <div className="row-span-8 grid justify-items-center justify-self-center w-11/12 md:w-10/12 lg:min-w-9/12 xl:min-w-8/12 h-full border border-neutral-300 bg-slate-300 rounded-lg cursor-pointer "
+            <div className="row-span-8 grid justify-items-center justify-self-center w-11/12 md:w-10/12 lg:min-w-9/12 xl:min-w-8/12 h-80 border border-neutral-300 bg-slate-300 rounded-lg cursor-pointer "
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 onClick={() => Git_pages_link && window.open(Git_pages_link)}
@@ -89,7 +89,7 @@ const ProjectPlate = ({ projectName, projectSubtitle, projectImageUrl, descripti
                 onClick={() => window.open(Git_code_link)}
             >
                 <div className='grid justify-items-end text-sm md:text-md lg:text-lg w-full' data-aos-mirror="true" data-aos-delay="500" data-aos-duration="2000" data-aos='fade'><FaGithub className='' /></div>
-                <span className='text-xs md:text-sm lg:text-md w-full' data-aos-mirror="true" data-aos-delay="500" data-aos-duration="2000" data-aos='fade'>Click to View Project's Git Source Code.</span>
+                <span className='text-xs md:text-sm lg:text-md w-full' data-aos-mirror="true" data-aos-delay="500" data-aos-duration="2000" data-aos='fade'>Click to View Project's Git Source.</span>
             </div>
 
         </div>
